@@ -1,7 +1,6 @@
 /**
  * Enumerates faker modules and their methods.
  */
-import { faker } from "@faker-js/faker";
 
 const SKIP_MODULES = new Set([
   "helpers",
@@ -29,11 +28,11 @@ function getAllMethods(obj: object): string[] {
   return [...methods].sort();
 }
 
-/** Get all faker module names. */
-export function listModules(): string[] {
+/** Get all faker module names for a given faker instance. */
+export function listModules(fakerInstance: any): string[] {
   const modules: string[] = [];
   const allKeys = new Set<string>();
-  let proto: any = faker;
+  let proto: any = fakerInstance;
   while (proto && proto !== Object.prototype) {
     for (const name of Object.getOwnPropertyNames(proto)) {
       allKeys.add(name);
@@ -43,7 +42,7 @@ export function listModules(): string[] {
   for (const key of allKeys) {
     if (SKIP_MODULES.has(key) || key.startsWith("_")) continue;
     try {
-      const val = (faker as any)[key];
+      const val = fakerInstance[key];
       if (
         typeof val === "object" &&
         val !== null &&
@@ -60,8 +59,8 @@ export function listModules(): string[] {
 }
 
 /** Get all method names for a given module. */
-export function listMethods(moduleName: string): string[] {
-  const mod = (faker as any)[moduleName];
+export function listMethods(fakerInstance: any, moduleName: string): string[] {
+  const mod = fakerInstance[moduleName];
   if (!mod || typeof mod !== "object") {
     throw new Error(`Unknown module: ${moduleName}`);
   }
