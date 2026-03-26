@@ -1,0 +1,7 @@
+# Gitleaks config for faker-cli
+# Fixture files contain fake/generated data from @faker-js/faker (fake JWTs, etc.)
+
+[allowlist]
+  paths = [
+    '''test/fixtures/.*\.json'''
+  ]

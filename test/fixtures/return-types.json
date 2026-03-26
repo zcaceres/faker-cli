@@ -1,0 +1,1527 @@
+[
+  {
+    "module": "airline",
+    "method": "aircraftType",
+    "returnType": "string",
+    "raw": "widebody"
+  },
+  {
+    "module": "airline",
+    "method": "airline",
+    "returnType": "object",
+    "raw": {
+      "name": "Vietnam Airlines",
+      "iataCode": "VN"
+    },
+    "objectKeys": [
+      "name",
+      "iataCode"
+    ]
+  },
+  {
+    "module": "airline",
+    "method": "airplane",
+    "returnType": "object",
+    "raw": {
+      "name": "McDonnell Douglas MD82",
+      "iataTypeCode": "M82"
+    },
+    "objectKeys": [
+      "name",
+      "iataTypeCode"
+    ]
+  },
+  {
+    "module": "airline",
+    "method": "airport",
+    "returnType": "object",
+    "raw": {
+      "name": "Tunis Carthage International Airport",
+      "iataCode": "TUN"
+    },
+    "objectKeys": [
+      "name",
+      "iataCode"
+    ]
+  },
+  {
+    "module": "airline",
+    "method": "flightNumber",
+    "returnType": "string",
+    "raw": "3125"
+  },
+  {
+    "module": "airline",
+    "method": "recordLocator",
+    "returnType": "string",
+    "raw": "YHEEQQ"
+  },
+  {
+    "module": "airline",
+    "method": "seat",
+    "returnType": "string",
+    "raw": "33B"
+  },
+  {
+    "module": "animal",
+    "method": "bear",
+    "returnType": "string",
+    "raw": "Sun bear"
+  },
+  {
+    "module": "animal",
+    "method": "bird",
+    "returnType": "string",
+    "raw": "White-headed Woodpecker"
+  },
+  {
+    "module": "animal",
+    "method": "cat",
+    "returnType": "string",
+    "raw": "Tonkinese"
+  },
+  {
+    "module": "animal",
+    "method": "cetacean",
+    "returnType": "string",
+    "raw": "Spinner Dolphin"
+  },
+  {
+    "module": "animal",
+    "method": "cow",
+    "returnType": "string",
+    "raw": "Tux-Zillertal"
+  },
+  {
+    "module": "animal",
+    "method": "crocodilia",
+    "returnType": "string",
+    "raw": "West African Crocodile"
+  },
+  {
+    "module": "animal",
+    "method": "dog",
+    "returnType": "string",
+    "raw": "Tornjak"
+  },
+  {
+    "module": "animal",
+    "method": "fish",
+    "returnType": "string",
+    "raw": "Southern rough shrimp"
+  },
+  {
+    "module": "animal",
+    "method": "horse",
+    "returnType": "string",
+    "raw": "Ukrainian Riding Horse"
+  },
+  {
+    "module": "animal",
+    "method": "insect",
+    "returnType": "string",
+    "raw": "Western paper wasp"
+  },
+  {
+    "module": "animal",
+    "method": "lion",
+    "returnType": "string",
+    "raw": "West African Lion"
+  },
+  {
+    "module": "animal",
+    "method": "petName",
+    "returnType": "string",
+    "raw": "Stella"
+  },
+  {
+    "module": "animal",
+    "method": "rabbit",
+    "returnType": "string",
+    "raw": "Silver Marten"
+  },
+  {
+    "module": "animal",
+    "method": "rodent",
+    "returnType": "string",
+    "raw": "Strong tuco-tuco"
+  },
+  {
+    "module": "animal",
+    "method": "snake",
+    "returnType": "string",
+    "raw": "Vine snake"
+  },
+  {
+    "module": "animal",
+    "method": "type",
+    "returnType": "string",
+    "raw": "turtle"
+  },
+  {
+    "module": "book",
+    "method": "author",
+    "returnType": "string",
+    "raw": "Virginia Woolf"
+  },
+  {
+    "module": "book",
+    "method": "format",
+    "returnType": "string",
+    "raw": "Paperback"
+  },
+  {
+    "module": "book",
+    "method": "genre",
+    "returnType": "string",
+    "raw": "Western"
+  },
+  {
+    "module": "book",
+    "method": "publisher",
+    "returnType": "string",
+    "raw": "University of Akron Press"
+  },
+  {
+    "module": "book",
+    "method": "series",
+    "returnType": "string",
+    "raw": "Thursday Next Series"
+  },
+  {
+    "module": "book",
+    "method": "title",
+    "returnType": "string",
+    "raw": "To Kill a Mockingbird"
+  },
+  {
+    "module": "color",
+    "method": "cmyk",
+    "returnType": "number[]",
+    "raw": [
+      0.93,
+      0.31,
+      0.18,
+      0.2
+    ]
+  },
+  {
+    "module": "color",
+    "method": "colorByCSSColorSpace",
+    "returnType": "number[]",
+    "raw": [
+      0.9297,
+      0.3164,
+      0.1839
+    ]
+  },
+  {
+    "module": "color",
+    "method": "cssSupportedFunction",
+    "returnType": "string",
+    "raw": "color"
+  },
+  {
+    "module": "color",
+    "method": "cssSupportedSpace",
+    "returnType": "string",
+    "raw": "prophoto-rgb"
+  },
+  {
+    "module": "color",
+    "method": "hsl",
+    "returnType": "number[]",
+    "raw": [
+      335,
+      0.31,
+      0.18
+    ]
+  },
+  {
+    "module": "color",
+    "method": "human",
+    "returnType": "string",
+    "raw": "violet"
+  },
+  {
+    "module": "color",
+    "method": "hwb",
+    "returnType": "number[]",
+    "raw": [
+      335,
+      0.31,
+      0.18
+    ]
+  },
+  {
+    "module": "color",
+    "method": "lab",
+    "returnType": "number[]",
+    "raw": [
+      0.929617,
+      -36.7249,
+      -63.2163
+    ]
+  },
+  {
+    "module": "color",
+    "method": "lch",
+    "returnType": "number[]",
+    "raw": [
+      0.929617,
+      72.7,
+      42.3
+    ]
+  },
+  {
+    "module": "color",
+    "method": "rgb",
+    "returnType": "string",
+    "raw": "#e644cd"
+  },
+  {
+    "module": "color",
+    "method": "space",
+    "returnType": "string",
+    "raw": "sYCC"
+  },
+  {
+    "module": "commerce",
+    "method": "department",
+    "returnType": "string",
+    "raw": "Tools"
+  },
+  {
+    "module": "commerce",
+    "method": "isbn",
+    "returnType": "string",
+    "raw": "978-1-312-55967-7"
+  },
+  {
+    "module": "commerce",
+    "method": "price",
+    "returnType": "string",
+    "raw": "929.69"
+  },
+  {
+    "module": "commerce",
+    "method": "product",
+    "returnType": "string",
+    "raw": "Towels"
+  },
+  {
+    "module": "commerce",
+    "method": "productAdjective",
+    "returnType": "string",
+    "raw": "Tasty"
+  },
+  {
+    "module": "commerce",
+    "method": "productDescription",
+    "returnType": "string",
+    "raw": "Generic Chair designed with Ceramic for parched performance"
+  },
+  {
+    "module": "commerce",
+    "method": "productMaterial",
+    "returnType": "string",
+    "raw": "Steel"
+  },
+  {
+    "module": "commerce",
+    "method": "productName",
+    "returnType": "string",
+    "raw": "Tasty Concrete Chair"
+  },
+  {
+    "module": "commerce",
+    "method": "upc",
+    "returnType": "string",
+    "raw": "931255967674"
+  },
+  {
+    "module": "company",
+    "method": "buzzAdjective",
+    "returnType": "string",
+    "raw": "vertical"
+  },
+  {
+    "module": "company",
+    "method": "buzzNoun",
+    "returnType": "string",
+    "raw": "technologies"
+  },
+  {
+    "module": "company",
+    "method": "buzzPhrase",
+    "returnType": "string",
+    "raw": "unleash frictionless communities"
+  },
+  {
+    "module": "company",
+    "method": "buzzVerb",
+    "returnType": "string",
+    "raw": "unleash"
+  },
+  {
+    "module": "company",
+    "method": "catchPhrase",
+    "returnType": "string",
+    "raw": "Upgradable empowering circuit"
+  },
+  {
+    "module": "company",
+    "method": "catchPhraseAdjective",
+    "returnType": "string",
+    "raw": "Upgradable"
+  },
+  {
+    "module": "company",
+    "method": "catchPhraseDescriptor",
+    "returnType": "string",
+    "raw": "user-facing"
+  },
+  {
+    "module": "company",
+    "method": "catchPhraseNoun",
+    "returnType": "string",
+    "raw": "task-force"
+  },
+  {
+    "module": "company",
+    "method": "name",
+    "returnType": "string",
+    "raw": "Doyle, Wintheiser and O'Kon"
+  },
+  {
+    "module": "database",
+    "method": "collation",
+    "returnType": "string",
+    "raw": "utf8_unicode_ci"
+  },
+  {
+    "module": "database",
+    "method": "column",
+    "returnType": "string",
+    "raw": "updatedAt"
+  },
+  {
+    "module": "database",
+    "method": "engine",
+    "returnType": "string",
+    "raw": "MyISAM"
+  },
+  {
+    "module": "database",
+    "method": "mongodbObjectId",
+    "returnType": "string",
+    "raw": "e644cdfeaeaf026ebdffefa7"
+  },
+  {
+    "module": "database",
+    "method": "type",
+    "returnType": "string",
+    "raw": "tinyint"
+  },
+  {
+    "module": "datatype",
+    "method": "boolean",
+    "returnType": "boolean",
+    "raw": false
+  },
+  {
+    "module": "date",
+    "method": "anytime",
+    "returnType": "Date",
+    "raw": "2025-11-10T14:52:26.207Z"
+  },
+  {
+    "module": "date",
+    "method": "birthdate",
+    "returnType": "Date",
+    "raw": "2002-07-26T11:11:27.951Z"
+  },
+  {
+    "module": "date",
+    "method": "future",
+    "returnType": "Date",
+    "raw": "2025-12-06T07:26:13.174Z"
+  },
+  {
+    "module": "date",
+    "method": "month",
+    "returnType": "string",
+    "raw": "September"
+  },
+  {
+    "module": "date",
+    "method": "past",
+    "returnType": "Date",
+    "raw": "2024-12-06T07:26:12.174Z"
+  },
+  {
+    "module": "date",
+    "method": "recent",
+    "returnType": "Date",
+    "raw": "2024-12-31T22:18:37.901Z"
+  },
+  {
+    "module": "date",
+    "method": "soon",
+    "returnType": "Date",
+    "raw": "2025-01-01T22:18:38.901Z"
+  },
+  {
+    "module": "date",
+    "method": "timeZone",
+    "returnType": "string",
+    "raw": "Pacific/Fiji"
+  },
+  {
+    "module": "date",
+    "method": "weekday",
+    "returnType": "string",
+    "raw": "Wednesday"
+  },
+  {
+    "module": "finance",
+    "method": "accountName",
+    "returnType": "string",
+    "raw": "Savings Account"
+  },
+  {
+    "module": "finance",
+    "method": "accountNumber",
+    "returnType": "string",
+    "raw": "93125596"
+  },
+  {
+    "module": "finance",
+    "method": "amount",
+    "returnType": "string",
+    "raw": "929.62"
+  },
+  {
+    "module": "finance",
+    "method": "bic",
+    "returnType": "string",
+    "raw": "IEFOMPYN"
+  },
+  {
+    "module": "finance",
+    "method": "bitcoinAddress",
+    "returnType": "string",
+    "raw": "bc1pc67lmynrnry04aptvyrnqgcgrzpt60tw0hjm2wrujt489ggq6k6sxm5hev"
+  },
+  {
+    "module": "finance",
+    "method": "creditCardCVV",
+    "returnType": "string",
+    "raw": "931"
+  },
+  {
+    "module": "finance",
+    "method": "creditCardIssuer",
+    "returnType": "string",
+    "raw": "visa"
+  },
+  {
+    "module": "finance",
+    "method": "creditCardNumber",
+    "returnType": "string",
+    "raw": "4125596767906"
+  },
+  {
+    "module": "finance",
+    "method": "currency",
+    "returnType": "object",
+    "raw": {
+      "name": "Tala",
+      "code": "WST",
+      "symbol": "",
+      "numericCode": "882"
+    },
+    "objectKeys": [
+      "name",
+      "code",
+      "symbol",
+      "numericCode"
+    ]
+  },
+  {
+    "module": "finance",
+    "method": "currencyCode",
+    "returnType": "string",
+    "raw": "WST"
+  },
+  {
+    "module": "finance",
+    "method": "currencyName",
+    "returnType": "string",
+    "raw": "Tala"
+  },
+  {
+    "module": "finance",
+    "method": "currencyNumericCode",
+    "returnType": "string",
+    "raw": "882"
+  },
+  {
+    "module": "finance",
+    "method": "currencySymbol",
+    "returnType": "string",
+    "raw": "¥"
+  },
+  {
+    "module": "finance",
+    "method": "ethereumAddress",
+    "returnType": "string",
+    "raw": "0xe644cdfeaeaf026ebdffefa79afeb30bd0abd1da"
+  },
+  {
+    "module": "finance",
+    "method": "iban",
+    "returnType": "string",
+    "raw": "TN8510696690038964497008"
+  },
+  {
+    "module": "finance",
+    "method": "litecoinAddress",
+    "returnType": "string",
+    "raw": "LbcyAXDKDKX17iENSXHDHtjrJZFMa2NU2"
+  },
+  {
+    "module": "finance",
+    "method": "pin",
+    "returnType": "string",
+    "raw": "9312"
+  },
+  {
+    "module": "finance",
+    "method": "routingNumber",
+    "returnType": "string",
+    "raw": "931255966"
+  },
+  {
+    "module": "finance",
+    "method": "transactionDescription",
+    "returnType": "string",
+    "raw": "invoice transaction at Mertz - Rohan using card ending with ****6790 for BMD 298.70 in account ***6889."
+  },
+  {
+    "module": "finance",
+    "method": "transactionType",
+    "returnType": "string",
+    "raw": "withdrawal"
+  },
+  {
+    "module": "food",
+    "method": "adjective",
+    "returnType": "string",
+    "raw": "tender"
+  },
+  {
+    "module": "food",
+    "method": "description",
+    "returnType": "string",
+    "raw": "Three camembert with iceberg lettuce, swiss chard, potatoes, potatoes and ajowan seed. With a side of baked date, and your choice of shiitake mushrooms or wheat."
+  },
+  {
+    "module": "food",
+    "method": "dish",
+    "returnType": "string",
+    "raw": "Ebiten Maki"
+  },
+  {
+    "module": "food",
+    "method": "ethnicCategory",
+    "returnType": "string",
+    "raw": "Texan"
+  },
+  {
+    "module": "food",
+    "method": "fruit",
+    "returnType": "string",
+    "raw": "strawberry"
+  },
+  {
+    "module": "food",
+    "method": "ingredient",
+    "returnType": "string",
+    "raw": "turmeric"
+  },
+  {
+    "module": "food",
+    "method": "meat",
+    "returnType": "string",
+    "raw": "turkey"
+  },
+  {
+    "module": "food",
+    "method": "spice",
+    "returnType": "string",
+    "raw": "tandoori masala"
+  },
+  {
+    "module": "food",
+    "method": "vegetable",
+    "returnType": "string",
+    "raw": "sun dried tomatoes"
+  },
+  {
+    "module": "git",
+    "method": "branch",
+    "returnType": "string",
+    "raw": "system-copy"
+  },
+  {
+    "module": "git",
+    "method": "commitDate",
+    "returnType": "string",
+    "raw": "Tue Dec 31 22:18:37 2024 -0400"
+  },
+  {
+    "module": "git",
+    "method": "commitEntry",
+    "returnType": "string",
+    "raw": "commit 644cdfeaeaf026ebdffefa79afeb30bd0abd1dac\r\nAuthor: Athena.Koss53 <Athena_Koss15@yahoo.com>\r\nDate: Tue Dec 31 09:03:22 2024 +0900\r\n\r\n    synthesize haptic circuit\r\n"
+  },
+  {
+    "module": "git",
+    "method": "commitMessage",
+    "returnType": "string",
+    "raw": "synthesize digital bus"
+  },
+  {
+    "module": "git",
+    "method": "commitSha",
+    "returnType": "string",
+    "raw": "e644cdfeaeaf026ebdffefa79afeb30bd0abd1da"
+  },
+  {
+    "module": "hacker",
+    "method": "abbreviation",
+    "returnType": "string",
+    "raw": "VGA"
+  },
+  {
+    "module": "hacker",
+    "method": "adjective",
+    "returnType": "string",
+    "raw": "virtual"
+  },
+  {
+    "module": "hacker",
+    "method": "ingverb",
+    "returnType": "string",
+    "raw": "synthesizing"
+  },
+  {
+    "module": "hacker",
+    "method": "noun",
+    "returnType": "string",
+    "raw": "system"
+  },
+  {
+    "module": "hacker",
+    "method": "phrase",
+    "returnType": "string",
+    "raw": "calculating the matrix won't do anything, we need to transmit the primary SSD alarm!"
+  },
+  {
+    "module": "hacker",
+    "method": "verb",
+    "returnType": "string",
+    "raw": "synthesize"
+  },
+  {
+    "module": "image",
+    "method": "avatar",
+    "returnType": "string",
+    "raw": "https://avatars.githubusercontent.com/u/31637555"
+  },
+  {
+    "module": "image",
+    "method": "avatarGitHub",
+    "returnType": "string",
+    "raw": "https://avatars.githubusercontent.com/u/92961610"
+  },
+  {
+    "module": "image",
+    "method": "dataUri",
+    "returnType": "string",
+    "raw": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgYmFzZVByb2ZpbGU9ImZ1bGwiIHdpZHRoPSIzNzE4IiBoZWlnaHQ9IjEyNjYiPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiM0NGNkZmUiLz48dGV4dCB4PSIxODU5IiB5PSI2MzMiIGZvbnQtc2l6ZT0iMjAiIGFsaWdubWVudC1iYXNlbGluZT0ibWlkZGxlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+MzcxOHgxMjY2PC90ZXh0Pjwvc3ZnPg=="
+  },
+  {
+    "module": "image",
+    "method": "personPortrait",
+    "returnType": "string",
+    "raw": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/31.jpg"
+  },
+  {
+    "module": "image",
+    "method": "url",
+    "returnType": "string",
+    "raw": "https://picsum.photos/seed/czAXEK/3718/1266"
+  },
+  {
+    "module": "image",
+    "method": "urlLoremFlickr",
+    "returnType": "string",
+    "raw": "https://loremflickr.com/3718/1266?lock=1656593383470774"
+  },
+  {
+    "module": "image",
+    "method": "urlPicsumPhotos",
+    "returnType": "string",
+    "raw": "https://picsum.photos/seed/AXEKEKX0/3718/1266?grayscale&blur=2"
+  },
+  {
+    "module": "internet",
+    "method": "displayName",
+    "returnType": "string",
+    "raw": "Clinton_Mertz65"
+  },
+  {
+    "module": "internet",
+    "method": "domainName",
+    "returnType": "string",
+    "raw": "vengeful-eyeliner.com"
+  },
+  {
+    "module": "internet",
+    "method": "domainSuffix",
+    "returnType": "string",
+    "raw": "org"
+  },
+  {
+    "module": "internet",
+    "method": "domainWord",
+    "returnType": "string",
+    "raw": "vengeful-eyeliner"
+  },
+  {
+    "module": "internet",
+    "method": "email",
+    "returnType": "string",
+    "raw": "Darla_Wintheiser@yahoo.com"
+  },
+  {
+    "module": "internet",
+    "method": "emoji",
+    "returnType": "string",
+    "raw": "🇬🇫"
+  },
+  {
+    "module": "internet",
+    "method": "exampleEmail",
+    "returnType": "string",
+    "raw": "Darla_Wintheiser@example.org"
+  },
+  {
+    "module": "internet",
+    "method": "httpMethod",
+    "returnType": "string",
+    "raw": "PATCH"
+  },
+  {
+    "module": "internet",
+    "method": "httpStatusCode",
+    "returnType": "number",
+    "raw": 503
+  },
+  {
+    "module": "internet",
+    "method": "ip",
+    "returnType": "string",
+    "raw": "644c:dfea:eaf0:26eb:dffe:fa79:afeb:30bd"
+  },
+  {
+    "module": "internet",
+    "method": "ipv4",
+    "returnType": "string",
+    "raw": "237.251.81.252"
+  },
+  {
+    "module": "internet",
+    "method": "ipv6",
+    "returnType": "string",
+    "raw": "e644:cdfe:aeaf:026e:bdff:efa7:9afe:b30b"
+  },
+  {
+    "module": "internet",
+    "method": "jwt",
+    "returnType": "string",
+    "raw": "eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzU2ODM1MTgsImV4cCI6MTczNTY5OTQwOSwibmJmIjoxNzE3MDU1NjI2LCJpc3MiOiJPJ0tlZWZlLVJvaGFuIExMQyIsInN1YiI6ImJmMDE0YWNkLWZiYWItNDc1Ny1iYmZhLWMyMGNlMDc4OTBlYiIsImF1ZCI6IjhjMTM0NzdiLTI4MmMtNGU5Mi05NzZkLWU2NTkzMmJjOWZhZSIsImp0aSI6IjViODMzYzdlLWY4NGItNDU3My1hNWE1LWNjZGYxZTVkZTAzNCJ9.58vGREAIfTr1XEvGuVv4zCWpg6us1HIJp0UMajBm9aRhAspSGh3cVQX3zt1npBFQ"
+  },
+  {
+    "module": "internet",
+    "method": "jwtAlgorithm",
+    "returnType": "string",
+    "raw": "none"
+  },
+  {
+    "module": "internet",
+    "method": "mac",
+    "returnType": "string",
+    "raw": "e5:23:99:fa:ba:bf"
+  },
+  {
+    "module": "internet",
+    "method": "password",
+    "returnType": "string",
+    "raw": "y24VY_h_h_mseeM"
+  },
+  {
+    "module": "internet",
+    "method": "port",
+    "returnType": "number",
+    "raw": 60923
+  },
+  {
+    "module": "internet",
+    "method": "protocol",
+    "returnType": "string",
+    "raw": "https"
+  },
+  {
+    "module": "internet",
+    "method": "url",
+    "returnType": "string",
+    "raw": "https://giving-contractor.com"
+  },
+  {
+    "module": "internet",
+    "method": "userAgent",
+    "returnType": "string",
+    "raw": "Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/550.56.59 (KHTML, like Gecko) Version/18_3 Mobile/15E148 Safari/588.65"
+  },
+  {
+    "module": "internet",
+    "method": "username",
+    "returnType": "string",
+    "raw": "Clinton65"
+  },
+  {
+    "module": "location",
+    "method": "buildingNumber",
+    "returnType": "string",
+    "raw": "312"
+  },
+  {
+    "module": "location",
+    "method": "cardinalDirection",
+    "returnType": "string",
+    "raw": "West"
+  },
+  {
+    "module": "location",
+    "method": "city",
+    "returnType": "string",
+    "raw": "Fond du Lac"
+  },
+  {
+    "module": "location",
+    "method": "continent",
+    "returnType": "string",
+    "raw": "South America"
+  },
+  {
+    "module": "location",
+    "method": "country",
+    "returnType": "string",
+    "raw": "Uganda"
+  },
+  {
+    "module": "location",
+    "method": "countryCode",
+    "returnType": "string",
+    "raw": "UM"
+  },
+  {
+    "module": "location",
+    "method": "county",
+    "returnType": "string",
+    "raw": "Tyne and Wear"
+  },
+  {
+    "module": "location",
+    "method": "direction",
+    "returnType": "string",
+    "raw": "Southwest"
+  },
+  {
+    "module": "location",
+    "method": "language",
+    "returnType": "object",
+    "raw": {
+      "name": "Malay",
+      "alpha2": "ms",
+      "alpha3": "msa"
+    },
+    "objectKeys": [
+      "name",
+      "alpha2",
+      "alpha3"
+    ]
+  },
+  {
+    "module": "location",
+    "method": "latitude",
+    "returnType": "number",
+    "raw": 77.3309
+  },
+  {
+    "module": "location",
+    "method": "longitude",
+    "returnType": "number",
+    "raw": 154.6618
+  },
+  {
+    "module": "location",
+    "method": "nearbyGPSCoordinate",
+    "returnType": "number[]",
+    "raw": [
+      77.3309,
+      -66.1048
+    ]
+  },
+  {
+    "module": "location",
+    "method": "ordinalDirection",
+    "returnType": "string",
+    "raw": "Southwest"
+  },
+  {
+    "module": "location",
+    "method": "secondaryAddress",
+    "returnType": "string",
+    "raw": "Suite 312"
+  },
+  {
+    "module": "location",
+    "method": "state",
+    "returnType": "string",
+    "raw": "Washington"
+  },
+  {
+    "module": "location",
+    "method": "street",
+    "returnType": "string",
+    "raw": "Gordon Road"
+  },
+  {
+    "module": "location",
+    "method": "streetAddress",
+    "returnType": "string",
+    "raw": "312 O'Keefe-Rohan Plain"
+  },
+  {
+    "module": "location",
+    "method": "timeZone",
+    "returnType": "string",
+    "raw": "Pacific/Fiji"
+  },
+  {
+    "module": "location",
+    "method": "zipCode",
+    "returnType": "string",
+    "raw": "31255-9676"
+  },
+  {
+    "module": "lorem",
+    "method": "lines",
+    "returnType": "string",
+    "raw": "Auctus bardus minus pariatur vobis.\nTamquam solitudo tametsi vito absorbeo amissio coaegresco sollicito.\nUter vobis supra sapiente sunt delibero comparo decerno suspendo.\nSpiculum textilis assumenda acquiro thesaurus venio acidus deprimo est patior.\nVehemens suscipit toties."
+  },
+  {
+    "module": "lorem",
+    "method": "paragraph",
+    "returnType": "string",
+    "raw": "Comes auctus bardus minus pariatur vobis solitudo tamquam solitudo tametsi. Absorbeo amissio coaegresco sollicito tollo uter vobis supra sapiente sunt. Comparo decerno suspendo vulgus spiculum textilis."
+  },
+  {
+    "module": "lorem",
+    "method": "paragraphs",
+    "returnType": "string",
+    "raw": "Comes auctus bardus minus pariatur vobis solitudo tamquam solitudo tametsi. Absorbeo amissio coaegresco sollicito tollo uter vobis supra sapiente sunt. Comparo decerno suspendo vulgus spiculum textilis.\nAcquiro thesaurus venio acidus. Est patior admoneo vehemens suscipit toties. Tollo allatus blanditiis caute delibero degenero sui.\nExcepturi aspicio tenus vestrum. Arcus depraedor cotidie ubi vere credo comedo. Audeo antea stips thermae nam voluptate reiciendis."
+  },
+  {
+    "module": "lorem",
+    "method": "sentence",
+    "returnType": "string",
+    "raw": "Comes auctus bardus minus pariatur vobis solitudo tamquam solitudo tametsi."
+  },
+  {
+    "module": "lorem",
+    "method": "sentences",
+    "returnType": "string",
+    "raw": "Auctus bardus minus pariatur vobis. Tamquam solitudo tametsi vito absorbeo amissio coaegresco sollicito. Uter vobis supra sapiente sunt delibero comparo decerno suspendo. Spiculum textilis assumenda acquiro thesaurus venio acidus deprimo est patior. Vehemens suscipit toties. Tollo allatus blanditiis caute delibero degenero sui."
+  },
+  {
+    "module": "lorem",
+    "method": "slug",
+    "returnType": "string",
+    "raw": "vetus-comes-auctus"
+  },
+  {
+    "module": "lorem",
+    "method": "text",
+    "returnType": "string",
+    "raw": "Bardus minus pariatur vobis.\nTamquam solitudo tametsi vito absorbeo amissio coaegresco sollicito."
+  },
+  {
+    "module": "lorem",
+    "method": "word",
+    "returnType": "string",
+    "raw": "vetus"
+  },
+  {
+    "module": "lorem",
+    "method": "words",
+    "returnType": "string",
+    "raw": "vetus comes auctus"
+  },
+  {
+    "module": "music",
+    "method": "album",
+    "returnType": "string",
+    "raw": "Tudo Em Paz"
+  },
+  {
+    "module": "music",
+    "method": "artist",
+    "returnType": "string",
+    "raw": "Trevor Daniel"
+  },
+  {
+    "module": "music",
+    "method": "genre",
+    "returnType": "string",
+    "raw": "Synth Pop"
+  },
+  {
+    "module": "music",
+    "method": "songName",
+    "returnType": "string",
+    "raw": "West End Blues"
+  },
+  {
+    "module": "number",
+    "method": "bigInt",
+    "returnType": "bigint",
+    "raw": "312559676790126"
+  },
+  {
+    "module": "number",
+    "method": "binary",
+    "returnType": "string",
+    "raw": "1"
+  },
+  {
+    "module": "number",
+    "method": "float",
+    "returnType": "number",
+    "raw": 0.9296160928171479
+  },
+  {
+    "module": "number",
+    "method": "hex",
+    "returnType": "string",
+    "raw": "e"
+  },
+  {
+    "module": "number",
+    "method": "int",
+    "returnType": "number",
+    "raw": 8373237378417847
+  },
+  {
+    "module": "number",
+    "method": "octal",
+    "returnType": "string",
+    "raw": "7"
+  },
+  {
+    "module": "number",
+    "method": "romanNumeral",
+    "returnType": "string",
+    "raw": "MMMDCCXVIII"
+  },
+  {
+    "module": "person",
+    "method": "bio",
+    "returnType": "string",
+    "raw": "contractor devotee, leader 🦽"
+  },
+  {
+    "module": "person",
+    "method": "firstName",
+    "returnType": "string",
+    "raw": "Clinton"
+  },
+  {
+    "module": "person",
+    "method": "fullName",
+    "returnType": "string",
+    "raw": "Clinton Mante"
+  },
+  {
+    "module": "person",
+    "method": "gender",
+    "returnType": "string",
+    "raw": "Trigender"
+  },
+  {
+    "module": "person",
+    "method": "jobArea",
+    "returnType": "string",
+    "raw": "Factors"
+  },
+  {
+    "module": "person",
+    "method": "jobDescriptor",
+    "returnType": "string",
+    "raw": "Chief"
+  },
+  {
+    "module": "person",
+    "method": "jobTitle",
+    "returnType": "string",
+    "raw": "Chief Paradigm Officer"
+  },
+  {
+    "module": "person",
+    "method": "jobType",
+    "returnType": "string",
+    "raw": "Representative"
+  },
+  {
+    "module": "person",
+    "method": "lastName",
+    "returnType": "string",
+    "raw": "Deckow"
+  },
+  {
+    "module": "person",
+    "method": "middleName",
+    "returnType": "string",
+    "raw": "Cooper"
+  },
+  {
+    "module": "person",
+    "method": "prefix",
+    "returnType": "string",
+    "raw": "Mr."
+  },
+  {
+    "module": "person",
+    "method": "sex",
+    "returnType": "string",
+    "raw": "male"
+  },
+  {
+    "module": "person",
+    "method": "sexType",
+    "returnType": "string",
+    "raw": "male"
+  },
+  {
+    "module": "person",
+    "method": "suffix",
+    "returnType": "string",
+    "raw": "DVM"
+  },
+  {
+    "module": "person",
+    "method": "zodiacSign",
+    "returnType": "string",
+    "raw": "Capricorn"
+  },
+  {
+    "module": "phone",
+    "method": "imei",
+    "returnType": "string",
+    "raw": "93-125596-767901-4"
+  },
+  {
+    "module": "phone",
+    "method": "number",
+    "returnType": "string",
+    "raw": "1-412-659-6767 x90126"
+  },
+  {
+    "module": "science",
+    "method": "chemicalElement",
+    "returnType": "object",
+    "raw": {
+      "symbol": "Ds",
+      "name": "Darmstadtium",
+      "atomicNumber": 110
+    },
+    "objectKeys": [
+      "symbol",
+      "name",
+      "atomicNumber"
+    ]
+  },
+  {
+    "module": "science",
+    "method": "unit",
+    "returnType": "object",
+    "raw": {
+      "name": "henry",
+      "symbol": "H"
+    },
+    "objectKeys": [
+      "name",
+      "symbol"
+    ]
+  },
+  {
+    "module": "string",
+    "method": "alpha",
+    "returnType": "string",
+    "raw": "W"
+  },
+  {
+    "module": "string",
+    "method": "alphanumeric",
+    "returnType": "string",
+    "raw": "V"
+  },
+  {
+    "module": "string",
+    "method": "binary",
+    "returnType": "string",
+    "raw": "0b1"
+  },
+  {
+    "module": "string",
+    "method": "hexadecimal",
+    "returnType": "string",
+    "raw": "0xE"
+  },
+  {
+    "module": "string",
+    "method": "nanoid",
+    "returnType": "string",
+    "raw": "jcAEEX6ESIIkJ-aN1w3Jv"
+  },
+  {
+    "module": "string",
+    "method": "numeric",
+    "returnType": "string",
+    "raw": "9"
+  },
+  {
+    "module": "string",
+    "method": "octal",
+    "returnType": "string",
+    "raw": "0o7"
+  },
+  {
+    "module": "string",
+    "method": "sample",
+    "returnType": "string",
+    "raw": "w>24UXz]f]"
+  },
+  {
+    "module": "string",
+    "method": "symbol",
+    "returnType": "string",
+    "raw": "|"
+  },
+  {
+    "module": "string",
+    "method": "ulid",
+    "returnType": "string",
+    "raw": "01JGFJJZ00XA56JKYMQMQY039N"
+  },
+  {
+    "module": "string",
+    "method": "uuid",
+    "returnType": "string",
+    "raw": "e52399fa-babf-4014-8acd-fbab757bfac2"
+  },
+  {
+    "module": "system",
+    "method": "commonFileExt",
+    "returnType": "string",
+    "raw": "htm"
+  },
+  {
+    "module": "system",
+    "method": "commonFileName",
+    "returnType": "string",
+    "raw": "quarrelsome_gracefully_secondary.jpe"
+  },
+  {
+    "module": "system",
+    "method": "commonFileType",
+    "returnType": "string",
+    "raw": "application"
+  },
+  {
+    "module": "system",
+    "method": "cron",
+    "returnType": "string",
+    "raw": "* * * * ?"
+  },
+  {
+    "module": "system",
+    "method": "directoryPath",
+    "returnType": "string",
+    "raw": "/var/log"
+  },
+  {
+    "module": "system",
+    "method": "fileExt",
+    "returnType": "string",
+    "raw": "mp4v"
+  },
+  {
+    "module": "system",
+    "method": "fileName",
+    "returnType": "string",
+    "raw": "quarrelsome_gracefully_secondary.php"
+  },
+  {
+    "module": "system",
+    "method": "filePath",
+    "returnType": "string",
+    "raw": "/var/log/simplistic.spx"
+  },
+  {
+    "module": "system",
+    "method": "fileType",
+    "returnType": "string",
+    "raw": "video"
+  },
+  {
+    "module": "system",
+    "method": "mimeType",
+    "returnType": "string",
+    "raw": "video/mp2t"
+  },
+  {
+    "module": "system",
+    "method": "networkInterface",
+    "returnType": "string",
+    "raw": "wws1f5"
+  },
+  {
+    "module": "system",
+    "method": "semver",
+    "returnType": "string",
+    "raw": "9.6.3"
+  },
+  {
+    "module": "vehicle",
+    "method": "bicycle",
+    "returnType": "string",
+    "raw": "Triathlon/Time Trial Bicycle"
+  },
+  {
+    "module": "vehicle",
+    "method": "color",
+    "returnType": "string",
+    "raw": "violet"
+  },
+  {
+    "module": "vehicle",
+    "method": "fuel",
+    "returnType": "string",
+    "raw": "Hybrid"
+  },
+  {
+    "module": "vehicle",
+    "method": "manufacturer",
+    "returnType": "string",
+    "raw": "Toyota"
+  },
+  {
+    "module": "vehicle",
+    "method": "model",
+    "returnType": "string",
+    "raw": "V90"
+  },
+  {
+    "module": "vehicle",
+    "method": "type",
+    "returnType": "string",
+    "raw": "Wagon"
+  },
+  {
+    "module": "vehicle",
+    "method": "vehicle",
+    "returnType": "string",
+    "raw": "Toyota Colorado"
+  },
+  {
+    "module": "vehicle",
+    "method": "vin",
+    "returnType": "string",
+    "raw": "XA66JKYMRMUY01268"
+  },
+  {
+    "module": "vehicle",
+    "method": "vrm",
+    "returnType": "string",
+    "raw": "YI12OPZ"
+  },
+  {
+    "module": "word",
+    "method": "adjective",
+    "returnType": "string",
+    "raw": "vengeful"
+  },
+  {
+    "module": "word",
+    "method": "adverb",
+    "returnType": "string",
+    "raw": "victoriously"
+  },
+  {
+    "module": "word",
+    "method": "conjunction",
+    "returnType": "string",
+    "raw": "whoever"
+  },
+  {
+    "module": "word",
+    "method": "interjection",
+    "returnType": "string",
+    "raw": "er"
+  },
+  {
+    "module": "word",
+    "method": "noun",
+    "returnType": "string",
+    "raw": "travel"
+  },
+  {
+    "module": "word",
+    "method": "preposition",
+    "returnType": "string",
+    "raw": "upon"
+  },
+  {
+    "module": "word",
+    "method": "sample",
+    "returnType": "string",
+    "raw": "oof"
+  },
+  {
+    "module": "word",
+    "method": "verb",
+    "returnType": "string",
+    "raw": "trash"
+  },
+  {
+    "module": "word",
+    "method": "words",
+    "returnType": "string",
+    "raw": "quarrelsome gracefully secondary"
+  }
+]

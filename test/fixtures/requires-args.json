@@ -1,0 +1,17 @@
+[
+  {
+    "module": "date",
+    "method": "between",
+    "error": "Cannot destructure property 'from' from null or undefined value"
+  },
+  {
+    "module": "date",
+    "method": "betweens",
+    "error": "Cannot destructure property 'from' from null or undefined value"
+  },
+  {
+    "module": "string",
+    "method": "fromCharacters",
+    "error": "undefined is not an object (evaluating 'e.length')"
+  }
+]
