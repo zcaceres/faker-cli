@@ -1,7 +1,6 @@
 /**
  * Resolves "module.method" strings to faker function calls.
  */
-import { faker } from "@faker-js/faker";
 import { listModules, listMethods } from "./enumerate";
 
 /** Parse a CLI argument into a value to pass to faker. */
@@ -17,11 +16,16 @@ function parseArg(arg: string): unknown {
 
 /**
  * Resolve and invoke a faker method.
+ * @param fakerInstance - A faker instance (e.g. faker, allFakers.de)
  * @param path - "module.method" string (e.g. "person.firstName")
  * @param rawArg - Optional argument string from CLI
  * @returns The raw return value from faker
  */
-export function invoke(path: string, rawArg?: string): unknown {
+export function invoke(
+  fakerInstance: any,
+  path: string,
+  rawArg?: string
+): unknown {
   const parts = path.split(".");
   if (parts.length !== 2) {
     throw new Error(
@@ -31,21 +35,21 @@ export function invoke(path: string, rawArg?: string): unknown {
 
   const [moduleName, methodName] = parts;
 
-  const modules = listModules();
+  const modules = listModules(fakerInstance);
   if (!modules.includes(moduleName)) {
     throw new Error(
       `Unknown module "${moduleName}". Available: ${modules.join(", ")}`
     );
   }
 
-  const methods = listMethods(moduleName);
+  const methods = listMethods(fakerInstance, moduleName);
   if (!methods.includes(methodName)) {
     throw new Error(
       `Unknown method "${moduleName}.${methodName}". Available: ${methods.join(", ")}`
     );
   }
 
-  const mod = (faker as any)[moduleName];
+  const mod = fakerInstance[moduleName];
   const fn = mod[methodName].bind(mod);
 
   if (rawArg !== undefined) {
@@ -53,9 +57,4 @@ export function invoke(path: string, rawArg?: string): unknown {
     return fn(parsed);
   }
   return fn();
-}
-
-/** Set the faker seed for reproducible output. */
-export function setSeed(seed: number): void {
-  faker.seed(seed);
 }

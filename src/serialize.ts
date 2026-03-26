@@ -1,15 +1,20 @@
 /**
  * Serializes faker return values to JSON strings.
- * Handles all 8 return type categories:
- * string, number, boolean, bigint, Date, Date[], number[], object
+ * Handles BigInt and Date at any nesting depth.
  */
-export function serialize(value: unknown): string {
-  if (typeof value === "bigint") return JSON.stringify(value.toString());
-  if (value instanceof Date) return JSON.stringify(value.toISOString());
-  if (Array.isArray(value)) {
-    return JSON.stringify(
-      value.map((v) => (v instanceof Date ? v.toISOString() : v))
-    );
+
+function prepareValue(v: unknown): unknown {
+  if (typeof v === "bigint") return v.toString();
+  if (v instanceof Date) return v.toISOString();
+  if (Array.isArray(v)) return v.map(prepareValue);
+  if (typeof v === "object" && v !== null) {
+    const out: Record<string, unknown> = {};
+    for (const [k, val] of Object.entries(v)) out[k] = prepareValue(val);
+    return out;
   }
-  return JSON.stringify(value);
+  return v;
+}
+
+export function serialize(value: unknown): string {
+  return JSON.stringify(prepareValue(value));
 }

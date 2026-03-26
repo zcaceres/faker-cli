@@ -47,4 +47,37 @@ describe("serialize", () => {
   it("serializes null", () => {
     expect(serialize(null)).toBe("null");
   });
+
+  it("serializes bigint nested inside objects", () => {
+    expect(serialize({ val: BigInt("123456") })).toBe('{"val":"123456"}');
+  });
+
+  it("serializes Date nested inside objects", () => {
+    const d = new Date("2025-01-01T00:00:00.000Z");
+    expect(serialize({ d })).toBe('{"d":"2025-01-01T00:00:00.000Z"}');
+  });
+
+  it("serializes deeply nested mixed types", () => {
+    const val = {
+      user: {
+        born: new Date("2000-06-15T00:00:00.000Z"),
+        id: BigInt("999"),
+      },
+      tags: ["a", "b"],
+      active: true,
+    };
+    expect(serialize(val)).toBe(
+      '{"user":{"born":"2000-06-15T00:00:00.000Z","id":"999"},"tags":["a","b"],"active":true}'
+    );
+  });
+
+  it("serializes array of objects with special types", () => {
+    const arr = [
+      { d: new Date("2025-01-01T00:00:00.000Z"), n: BigInt("42") },
+      { d: new Date("2026-01-01T00:00:00.000Z"), n: BigInt("99") },
+    ];
+    expect(serialize(arr)).toBe(
+      '[{"d":"2025-01-01T00:00:00.000Z","n":"42"},{"d":"2026-01-01T00:00:00.000Z","n":"99"}]'
+    );
+  });
 });
