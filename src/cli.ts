@@ -1,14 +1,6 @@
 #!/usr/bin/env bun
 /**
  * faker — Agent-friendly CLI for @faker-js/faker
- *
- * Usage:
- *   faker person.firstName
- *   faker number.int '{"min":1,"max":100}'
- *   faker --schema '{"name":"person.fullName","email":"internet.email"}'
- *   faker --schema schema.json --count 10 --locale de --seed 42
- *   faker --list
- *   faker --list person
  */
 
 import { faker as defaultFaker, allFakers } from "@faker-js/faker";
@@ -16,6 +8,7 @@ import { invoke } from "./resolver";
 import { serialize } from "./serialize";
 import { listModules, listMethods } from "./enumerate";
 import { resolveSchema } from "./schema";
+import { formatColumns } from "./format";
 
 const args = process.argv.slice(2);
 
@@ -25,6 +18,8 @@ let seed: number | undefined;
 let locale: string | undefined;
 let refDate: string | undefined;
 let schema: string | undefined;
+let format: "json" | "ndjson" = "json";
+let infoTarget: string | undefined;
 let listFlag = false;
 let listTarget: string | undefined;
 let path: string | undefined;
@@ -86,6 +81,29 @@ for (let i = 0; i < args.length; i++) {
     continue;
   }
 
+  if (arg === "--format" || arg === "-f") {
+    if (i + 1 >= args.length) {
+      console.error("Error: --format requires a value");
+      process.exit(1);
+    }
+    const val = args[++i];
+    if (val !== "json" && val !== "ndjson") {
+      console.error(`Error: Unknown format "${val}". Available: json, ndjson`);
+      process.exit(1);
+    }
+    format = val;
+    continue;
+  }
+
+  if (arg === "--info") {
+    if (i + 1 >= args.length) {
+      console.error("Error: --info requires a module.method argument");
+      process.exit(1);
+    }
+    infoTarget = args[++i];
+    continue;
+  }
+
   if (arg === "--help" || arg === "-h") {
     console.log(`faker — Agent-friendly CLI for @faker-js/faker
 
@@ -93,24 +111,28 @@ Usage:
   faker <module.method> [args] [options]
   faker --schema <json|file> [options]
   faker --list [module]
+  faker --info <module.method>
 
 Examples:
   faker person.firstName
   faker number.int '{"min":1,"max":100}'
-  faker airline.airline
-  faker person.firstName --count 5
+  faker helpers.fake "{{person.firstName}} {{person.lastName}}"
+  faker person.firstName --count 5 --format ndjson
   faker person.firstName --seed 42 --locale de
   faker --schema '{"name":"person.fullName","email":"internet.email"}'
   faker --schema schema.json --count 10
   faker date.past --ref-date 2025-01-01T00:00:00.000Z
+  faker --info number.int
 
 Options:
   --list, -l          List modules or methods
+  --info PATH         Show method parameters and return type
   --count N, -n N     Generate N values (output as JSON array)
   --seed N, -s N      Set seed for reproducible output
   --locale L, -L L    Locale code (e.g. de, en_US, ja). Default: en
   --ref-date DATE     Reference date for date methods (ISO 8601). Default: now
   --schema JSON|FILE  Generate structured object from schema
+  --format FMT, -f    Output format: json (default), ndjson
   --help, -h          Show this help`);
     process.exit(0);
   }
@@ -134,7 +156,9 @@ if (locale) {
   f = (allFakers as any)[locale];
   if (!f) {
     const available = Object.keys(allFakers).sort().join(", ");
-    console.error(`Error: Unknown locale "${locale}". Available: ${available}`);
+    console.error(
+      `Error: Unknown locale "${locale}". Available: ${available}`
+    );
     process.exit(1);
   }
 } else {
@@ -158,18 +182,44 @@ if (refDate) {
   f.setDefaultRefDate(d);
 }
 
+// Handle --info
+if (infoTarget) {
+  try {
+    const { getMethodInfo, formatMethodInfo } = await import("./info");
+    const info = getMethodInfo(infoTarget);
+    if (!info) {
+      console.error(`Error: No info found for "${infoTarget}"`);
+      process.exit(1);
+    }
+    console.log(formatMethodInfo(infoTarget, info));
+  } catch (err: any) {
+    console.error(`Error: ${err.message}`);
+    process.exit(1);
+  }
+  process.exit(0);
+}
+
 // Handle --list
 if (listFlag) {
   if (listTarget) {
     try {
       const methods = listMethods(f, listTarget);
-      console.log(JSON.stringify(methods));
+      if (process.stdout.isTTY) {
+        console.log(formatColumns(methods, listTarget));
+      } else {
+        console.log(JSON.stringify(methods));
+      }
     } catch (err: any) {
       console.error(`Error: ${err.message}`);
       process.exit(1);
     }
   } else {
-    console.log(JSON.stringify(listModules(f)));
+    const modules = listModules(f);
+    if (process.stdout.isTTY) {
+      console.log(formatColumns(modules, "Modules"));
+    } else {
+      console.log(JSON.stringify(modules));
+    }
   }
   process.exit(0);
 }
@@ -196,6 +246,10 @@ if (schema) {
     if (count === 1) {
       const result = resolveSchema(f, schemaObj);
       console.log(serialize(result));
+    } else if (format === "ndjson") {
+      for (let i = 0; i < count; i++) {
+        console.log(serialize(resolveSchema(f, schemaObj)));
+      }
     } else {
       const results: unknown[] = [];
       for (let i = 0; i < count; i++) {
@@ -220,6 +274,10 @@ try {
   if (count === 1) {
     const result = invoke(f, path, rawArg);
     console.log(serialize(result));
+  } else if (format === "ndjson") {
+    for (let i = 0; i < count; i++) {
+      console.log(serialize(invoke(f, path, rawArg)));
+    }
   } else {
     const results: unknown[] = [];
     for (let i = 0; i < count; i++) {

@@ -3,13 +3,15 @@
  */
 
 const SKIP_MODULES = new Set([
-  "helpers",
   "rawDefinitions",
   "definitions",
   "defaultRefDate",
 ]);
 
 const SKIP_METHODS = new Set(["constructor", "faker"]);
+
+// Helpers methods that require callbacks — can't be used from CLI
+const SKIP_HELPERS_METHODS = new Set(["unique", "maybe", "multiple"]);
 
 /** Walk prototype chain to find all callable methods on a module. */
 function getAllMethods(obj: object): string[] {
@@ -64,5 +66,9 @@ export function listMethods(fakerInstance: any, moduleName: string): string[] {
   if (!mod || typeof mod !== "object") {
     throw new Error(`Unknown module: ${moduleName}`);
   }
-  return getAllMethods(mod);
+  const methods = getAllMethods(mod);
+  if (moduleName === "helpers") {
+    return methods.filter((m) => !SKIP_HELPERS_METHODS.has(m));
+  }
+  return methods;
 }
