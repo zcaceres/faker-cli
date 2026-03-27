@@ -8,7 +8,8 @@ import { invoke } from "./resolver";
 import { serialize } from "./serialize";
 import { listModules, listMethods } from "./enumerate";
 import { resolveSchema } from "./schema";
-import { formatColumns } from "./format";
+import { formatColumns, formatTable } from "./format";
+import { describe, getModuleDescription } from "./describe";
 
 const args = process.argv.slice(2);
 
@@ -19,7 +20,7 @@ let locale: string | undefined;
 let refDate: string | undefined;
 let schema: string | undefined;
 let format: "json" | "ndjson" = "json";
-let infoTarget: string | undefined;
+let describeTarget: string | undefined;
 let listFlag = false;
 let listTarget: string | undefined;
 let path: string | undefined;
@@ -88,19 +89,21 @@ for (let i = 0; i < args.length; i++) {
     }
     const val = args[++i];
     if (val !== "json" && val !== "ndjson") {
-      console.error(`Error: Unknown format "${val}". Available: json, ndjson`);
+      console.error(
+        `Error: Unknown format "${val}". Available: json, ndjson`
+      );
       process.exit(1);
     }
     format = val;
     continue;
   }
 
-  if (arg === "--info") {
+  if (arg === "--describe" || arg === "--info") {
     if (i + 1 >= args.length) {
-      console.error("Error: --info requires a module.method argument");
+      console.error("Error: --describe requires a module or module.method");
       process.exit(1);
     }
-    infoTarget = args[++i];
+    describeTarget = args[++i];
     continue;
   }
 
@@ -110,8 +113,8 @@ for (let i = 0; i < args.length; i++) {
 Usage:
   faker <module.method> [args] [options]
   faker --schema <json|file> [options]
+  faker --describe <module|module.method>
   faker --list [module]
-  faker --info <module.method>
 
 Examples:
   faker person.firstName
@@ -122,11 +125,12 @@ Examples:
   faker --schema '{"name":"person.fullName","email":"internet.email"}'
   faker --schema schema.json --count 10
   faker date.past --ref-date 2025-01-01T00:00:00.000Z
-  faker --info number.int
+  faker --describe person
+  faker --describe number.int
 
 Options:
-  --list, -l          List modules or methods
-  --info PATH         Show method parameters and return type
+  --describe TARGET   Describe a module or method (params, types, examples)
+  --list, -l          List module or method names
   --count N, -n N     Generate N values (output as JSON array)
   --seed N, -s N      Set seed for reproducible output
   --locale L, -L L    Locale code (e.g. de, en_US, ja). Default: en
@@ -182,16 +186,10 @@ if (refDate) {
   f.setDefaultRefDate(d);
 }
 
-// Handle --info
-if (infoTarget) {
+// Handle --describe
+if (describeTarget) {
   try {
-    const { getMethodInfo, formatMethodInfo } = await import("./info");
-    const info = getMethodInfo(infoTarget);
-    if (!info) {
-      console.error(`Error: No info found for "${infoTarget}"`);
-      process.exit(1);
-    }
-    console.log(formatMethodInfo(infoTarget, info));
+    console.log(describe(f, describeTarget));
   } catch (err: any) {
     console.error(`Error: ${err.message}`);
     process.exit(1);
@@ -216,7 +214,17 @@ if (listFlag) {
   } else {
     const modules = listModules(f);
     if (process.stdout.isTTY) {
-      console.log(formatColumns(modules, "Modules"));
+      const rows: Array<[string, string]> = modules.map((m) => [
+        m,
+        getModuleDescription(m),
+      ]);
+      console.log(
+        formatTable(
+          rows,
+          "Modules",
+          "Run: faker --describe <module> for methods."
+        )
+      );
     } else {
       console.log(JSON.stringify(modules));
     }

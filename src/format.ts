@@ -25,3 +25,28 @@ export function formatColumns(items: string[], header?: string): string {
 
   return lines.join("\n");
 }
+
+/** Format two-column rows (name + description) for TTY display. */
+export function formatTable(
+  rows: Array<[string, string]>,
+  header?: string,
+  footer?: string
+): string {
+  if (rows.length === 0) return header ? `${header}:\n  (none)` : "(none)";
+
+  const maxKey = Math.max(...rows.map(([k]) => k.length));
+  const lines: string[] = [];
+  if (header) lines.push(`${header}:`);
+
+  for (const [key, desc] of rows) {
+    const padding = " ".repeat(Math.max(2, maxKey - key.length + 2));
+    lines.push(`  ${key}${padding}${desc}`);
+  }
+
+  if (footer) {
+    lines.push("");
+    lines.push(footer);
+  }
+
+  return lines.join("\n");
+}
