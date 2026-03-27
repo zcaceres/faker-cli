@@ -7,7 +7,14 @@
   },
   "scripts": {
     "test": "bun test",
-    "generate-fixtures": "bun run test/fixtures/generate.ts"
+    "build": "bun run build:darwin-arm64 && bun run build:darwin-x64 && bun run build:linux-x64 && bun run build:linux-arm64 && bun run build:windows-x64",
+    "build:darwin-arm64": "bun build --compile --target=bun-darwin-arm64 src/cli.ts --outfile dist/faker-darwin-arm64",
+    "build:darwin-x64": "bun build --compile --target=bun-darwin-x64 src/cli.ts --outfile dist/faker-darwin-x64",
+    "build:linux-x64": "bun build --compile --target=bun-linux-x64 src/cli.ts --outfile dist/faker-linux-x64",
+    "build:linux-arm64": "bun build --compile --target=bun-linux-arm64 src/cli.ts --outfile dist/faker-linux-arm64",
+    "build:windows-x64": "bun build --compile --target=bun-windows-x64 src/cli.ts --outfile dist/faker-windows-x64.exe",
+    "generate-fixtures": "bun run test/fixtures/generate.ts",
+    "generate-metadata": "bun run test/fixtures/generate-metadata.ts"
   },
   "dependencies": {
     "@faker-js/faker": "^10.4.0"
