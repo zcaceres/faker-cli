@@ -107,6 +107,12 @@ for (let i = 0; i < args.length; i++) {
     continue;
   }
 
+  if (arg === "--version" || arg === "-v" || arg === "-V") {
+    const pkg = require("../package.json");
+    console.log(pkg.version);
+    process.exit(0);
+  }
+
   if (arg === "--help" || arg === "-h") {
     console.log(`faker — Agent-friendly CLI for @faker-js/faker
 
@@ -137,6 +143,7 @@ Options:
   --ref-date DATE     Reference date for date methods (ISO 8601). Default: now
   --schema JSON|FILE  Generate structured object from schema
   --format FMT, -f    Output format: json (default), ndjson
+  --version, -v       Show version
   --help, -h          Show this help`);
     process.exit(0);
   }
