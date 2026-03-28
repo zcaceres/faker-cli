@@ -1,0 +1,126 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+      - "*.md"
+      - ".gitignore"
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - run: bun install --frozen-lockfile
+
+      - run: bun test
+
+      - run: bun run build
+
+      - name: Get version
+        id: version
+        run: echo "version=v$(jq -r .version package.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Check if tag exists
+        id: tag_check
+        run: |
+          if git rev-parse "${{ steps.version.outputs.version }}" >/dev/null 2>&1; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Extract changelog
+        if: steps.tag_check.outputs.exists == 'false'
+        id: changelog
+        run: |
+          VERSION=$(jq -r .version package.json)
+          BODY=$(awk "/^## \[${VERSION}\]/{found=1; next} /^## \[/{if(found) exit} found{print}" CHANGELOG.md)
+          if [ -z "$BODY" ]; then
+            BODY="Release ${VERSION}"
+          fi
+          echo "$BODY" > /tmp/release-notes.md
+
+      - name: Create release
+        if: steps.tag_check.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ steps.version.outputs.version }}" \
+            --title "${{ steps.version.outputs.version }}" \
+            --notes-file /tmp/release-notes.md \
+            dist/faker-darwin-arm64 \
+            dist/faker-darwin-x64 \
+            dist/faker-linux-x64 \
+            dist/faker-linux-arm64 \
+            dist/faker-windows-x64.exe
+
+      - name: Update Homebrew formula
+        if: steps.tag_check.outputs.exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          VERSION=$(jq -r .version package.json)
+          SHA_DARWIN_ARM64=$(shasum -a 256 dist/faker-darwin-arm64 | awk '{print $1}')
+          SHA_DARWIN_X64=$(shasum -a 256 dist/faker-darwin-x64 | awk '{print $1}')
+          SHA_LINUX_X64=$(shasum -a 256 dist/faker-linux-x64 | awk '{print $1}')
+          SHA_LINUX_ARM64=$(shasum -a 256 dist/faker-linux-arm64 | awk '{print $1}')
+
+          cat > /tmp/faker-cli.rb << FORMULA
+          class FakerCli < Formula
+            desc "Agent-friendly CLI for generating fake data. Wraps @faker-js/faker."
+            homepage "https://github.com/zcaceres/faker-cli"
+            license "MIT"
+            version "${VERSION}"
+
+            on_macos do
+              if Hardware::CPU.arm?
+                url "https://github.com/zcaceres/faker-cli/releases/download/v#{version}/faker-darwin-arm64"
+                sha256 "${SHA_DARWIN_ARM64}"
+              else
+                url "https://github.com/zcaceres/faker-cli/releases/download/v#{version}/faker-darwin-x64"
+                sha256 "${SHA_DARWIN_X64}"
+              end
+            end
+
+            on_linux do
+              if Hardware::CPU.arm?
+                url "https://github.com/zcaceres/faker-cli/releases/download/v#{version}/faker-linux-arm64"
+                sha256 "${SHA_LINUX_ARM64}"
+              else
+                url "https://github.com/zcaceres/faker-cli/releases/download/v#{version}/faker-linux-x64"
+                sha256 "${SHA_LINUX_X64}"
+              end
+            end
+
+            def install
+              binary = Dir.glob("faker-*").first
+              bin.install binary => "faker"
+            end
+
+            test do
+              assert_match "faker", shell_output("#{bin}/faker --help")
+            end
+          end
+          FORMULA
+
+          sed -i 's/^          //' /tmp/faker-cli.rb
+
+          gh api repos/zcaceres/homebrew-tap/contents/Formula/faker-cli.rb \
+            --method PUT \
+            --field message="update faker-cli to ${VERSION}" \
+            --field content="$(base64 -w0 /tmp/faker-cli.rb)" \
+            --field sha="$(gh api repos/zcaceres/homebrew-tap/contents/Formula/faker-cli.rb --jq .sha)"

@@ -38,14 +38,14 @@ export function invoke(
   const modules = listModules(fakerInstance);
   if (!modules.includes(moduleName)) {
     throw new Error(
-      `Unknown module "${moduleName}". Available: ${modules.join(", ")}`
+      `Unknown module "${moduleName}". Run: faker --list`
     );
   }
 
   const methods = listMethods(fakerInstance, moduleName);
   if (!methods.includes(methodName)) {
     throw new Error(
-      `Unknown method "${moduleName}.${methodName}". Available: ${methods.join(", ")}`
+      `Unknown method "${moduleName}.${methodName}". Run: faker --describe ${moduleName}`
     );
   }
 

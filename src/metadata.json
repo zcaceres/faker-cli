@@ -1,0 +1,3109 @@
+{
+  "animal.dog": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random dog breed.",
+    "examples": [
+      "faker.animal.dog() // 'Irish Water Spaniel'"
+    ]
+  },
+  "animal.cat": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random cat breed.",
+    "examples": [
+      "faker.animal.cat() // 'Singapura'"
+    ]
+  },
+  "animal.snake": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random snake species.",
+    "examples": [
+      "faker.animal.snake() // 'Eyelash viper'"
+    ]
+  },
+  "animal.bear": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random bear species.",
+    "examples": [
+      "faker.animal.bear() // 'Asian black bear'"
+    ]
+  },
+  "animal.lion": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random lion species.",
+    "examples": [
+      "faker.animal.lion() // 'Northeast Congo Lion'"
+    ]
+  },
+  "animal.cetacean": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random cetacean species.",
+    "examples": [
+      "faker.animal.cetacean() // 'Spinner Dolphin'"
+    ]
+  },
+  "animal.horse": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random horse breed.",
+    "examples": [
+      "faker.animal.horse() // 'Swedish Warmblood'"
+    ]
+  },
+  "animal.bird": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random bird species.",
+    "examples": [
+      "faker.animal.bird() // 'Buller's Shearwater'"
+    ]
+  },
+  "animal.cow": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random cow species.",
+    "examples": [
+      "faker.animal.cow() // 'Brava'"
+    ]
+  },
+  "animal.fish": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random fish species.",
+    "examples": [
+      "faker.animal.fish() // 'Mandarin fish'"
+    ]
+  },
+  "animal.crocodilia": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random crocodilian species.",
+    "examples": [
+      "faker.animal.crocodilia() // 'Philippine Crocodile'"
+    ]
+  },
+  "animal.insect": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random insect species.",
+    "examples": [
+      "faker.animal.insect() // 'Pyramid ant'"
+    ]
+  },
+  "animal.rabbit": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random rabbit species.",
+    "examples": [
+      "faker.animal.rabbit() // 'Florida White'"
+    ]
+  },
+  "animal.rodent": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random rodent breed.",
+    "examples": [
+      "faker.animal.rodent() // 'Cuscomys ashanika'"
+    ]
+  },
+  "animal.type": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random animal type.",
+    "examples": [
+      "faker.animal.type() // 'crocodile'"
+    ]
+  },
+  "animal.petName": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random pet name.",
+    "examples": [
+      "faker.animal.petName() // 'Coco'"
+    ]
+  },
+  "book.author": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random author name.",
+    "examples": [
+      "faker.book.author() // 'William Shakespeare'"
+    ]
+  },
+  "book.format": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random book format.",
+    "examples": [
+      "faker.book.format() // 'Hardcover'"
+    ]
+  },
+  "book.genre": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random genre.",
+    "examples": [
+      "faker.book.genre() // 'Fantasy'"
+    ]
+  },
+  "book.publisher": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random publisher.",
+    "examples": [
+      "faker.book.publisher() // 'Addison-Wesley'"
+    ]
+  },
+  "book.series": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random series.",
+    "examples": [
+      "faker.book.series() // 'Harry Potter'"
+    ]
+  },
+  "book.title": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random title.",
+    "examples": [
+      "faker.book.title() // 'Romeo and Juliet'"
+    ]
+  },
+  "color.human": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random human-readable color name.",
+    "examples": [
+      "faker.color.human() // 'red'"
+    ]
+  },
+  "color.space": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random color space name from the worldwide accepted color spaces.",
+    "examples": [
+      "faker.color.space() // 'sRGB'"
+    ]
+  },
+  "color.cssSupportedFunction": {
+    "params": [],
+    "returnType": "CssFunctionType",
+    "description": "Returns a random css supported color function name.",
+    "examples": [
+      "faker.color.cssSupportedFunction() // 'rgb'"
+    ]
+  },
+  "color.cssSupportedSpace": {
+    "params": [],
+    "returnType": "CssSpaceType",
+    "description": "Returns a random css supported color space name.",
+    "examples": [
+      "faker.color.cssSupportedSpace() // 'display-p3'"
+    ]
+  },
+  "color.rgb": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns an RGB color.",
+    "examples": [
+      "faker.color.rgb() // '#8be4ab'"
+    ]
+  },
+  "color.cmyk": {
+    "params": [],
+    "returnType": "number[]",
+    "description": "Returns a CMYK color.",
+    "examples": [
+      "faker.color.cmyk() // [0.31, 0.52, 0.32, 0.43]"
+    ]
+  },
+  "color.hsl": {
+    "params": [],
+    "returnType": "number[]",
+    "description": "Returns an HSL color.",
+    "examples": [
+      "faker.color.hsl() // [201, 0.23, 0.32]"
+    ]
+  },
+  "color.hwb": {
+    "params": [],
+    "returnType": "number[]",
+    "description": "Returns an HWB color.",
+    "examples": [
+      "faker.color.hwb() // [201, 0.21, 0.31]"
+    ]
+  },
+  "color.lab": {
+    "params": [],
+    "returnType": "number[]",
+    "description": "Returns a LAB (CIELAB) color.",
+    "examples": [
+      "faker.color.lab() // [0.832133, -80.3245, 100.1234]"
+    ]
+  },
+  "color.lch": {
+    "params": [],
+    "returnType": "number[]",
+    "description": "Returns an LCH color. Even though upper bound of",
+    "examples": [
+      "faker.color.lch() // [0.522345, 72.2, 56.2]"
+    ]
+  },
+  "color.colorByCSSColorSpace": {
+    "params": [],
+    "returnType": "number[]",
+    "description": "Returns a random color based on CSS color space specified.",
+    "examples": [
+      "faker.color.colorByCSSColorSpace() // [0.93, 1, 0.82]"
+    ]
+  },
+  "commerce.department": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a department inside a shop.",
+    "examples": [
+      "faker.commerce.department() // 'Garden'"
+    ]
+  },
+  "commerce.productName": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random descriptive product name.",
+    "examples": [
+      "faker.commerce.productName() // 'Incredible Soft Gloves'"
+    ]
+  },
+  "commerce.price": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ min?: number; max?: number; dec?: number; symbol?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a price between min and max (inclusive).",
+    "examples": [
+      "faker.commerce.price() // '828.07'",
+      "faker.commerce.price({ min: 100 }) // '904.19'",
+      "faker.commerce.price({ min: 100, max: 200 }) // '154.55'",
+      "faker.commerce.price({ min: 100, max: 200, dec: 0 }) // '133'",
+      "faker.commerce.price({ min: 100, max: 200, dec: 0, symbol: '$' }) // '$114'"
+    ]
+  },
+  "commerce.productAdjective": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns an adjective describing a product.",
+    "examples": [
+      "faker.commerce.productAdjective() // 'Handcrafted'"
+    ]
+  },
+  "commerce.productMaterial": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a material of a product.",
+    "examples": [
+      "faker.commerce.productMaterial() // 'Rubber'"
+    ]
+  },
+  "commerce.product": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a short product name.",
+    "examples": [
+      "faker.commerce.product() // 'Computer'"
+    ]
+  },
+  "commerce.productDescription": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a product description.",
+    "examples": [
+      "faker.commerce.productDescription() // 'Featuring Phosphorus-enhanced technology, our Fish offers unparalleled Modern performance'"
+    ]
+  },
+  "commerce.isbn": {
+    "params": [
+      {
+        "name": "options",
+        "type": "10 | 13 | { variant?: 10 | 13; separator?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random [ISBN](https://en.wikipedia.org/wiki/ISBN) identifier.",
+    "examples": [
+      "faker.commerce.isbn() // '978-0-692-82459-7'",
+      "faker.commerce.isbn(10) // '1-155-36404-X'",
+      "faker.commerce.isbn(13) // '978-1-60808-867-6'",
+      "faker.commerce.isbn({ separator: ' ' }) // '978 0 452 81498 1'",
+      "faker.commerce.isbn({ variant: 10, separator: ' ' }) // '0 940319 49 7'",
+      "faker.commerce.isbn({ variant: 13, separator: ' ' }) // '978 1 6618 9122 0'"
+    ]
+  },
+  "commerce.upc": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ prefix?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a valid [UPC‑A](https://en.wikipedia.org/wiki/Universal_Product_Code) (12 digits).",
+    "examples": [
+      "faker.commerce.upc() // '036000291452'",
+      "faker.commerce.upc({ prefix: '01234' }) // '012345678905'"
+    ]
+  },
+  "company.name": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random company name.",
+    "examples": [
+      "faker.company.name() // 'Zieme, Hauck and McClure'"
+    ]
+  },
+  "company.catchPhrase": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random catch phrase that can be displayed to an end user.",
+    "examples": [
+      "faker.company.catchPhrase() // 'Upgradable systematic flexibility'"
+    ]
+  },
+  "company.buzzPhrase": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random buzz phrase that can be used to demonstrate data being viewed by a manager.",
+    "examples": [
+      "faker.company.buzzPhrase() // 'cultivate synergistic e-markets'"
+    ]
+  },
+  "company.catchPhraseAdjective": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random catch phrase adjective that can be displayed to an end user..",
+    "examples": [
+      "faker.company.catchPhraseAdjective() // 'Multi-tiered'"
+    ]
+  },
+  "company.catchPhraseDescriptor": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random catch phrase descriptor that can be displayed to an end user..",
+    "examples": [
+      "faker.company.catchPhraseDescriptor() // 'composite'"
+    ]
+  },
+  "company.catchPhraseNoun": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random catch phrase noun that can be displayed to an end user..",
+    "examples": [
+      "faker.company.catchPhraseNoun() // 'leverage'"
+    ]
+  },
+  "company.buzzAdjective": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random buzz adjective that can be used to demonstrate data being viewed by a manager.",
+    "examples": [
+      "faker.company.buzzAdjective() // 'one-to-one'"
+    ]
+  },
+  "company.buzzVerb": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random buzz verb that can be used to demonstrate data being viewed by a manager.",
+    "examples": [
+      "faker.company.buzzVerb() // 'empower'"
+    ]
+  },
+  "company.buzzNoun": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random buzz noun that can be used to demonstrate data being viewed by a manager.",
+    "examples": [
+      "faker.company.buzzNoun() // 'paradigms'"
+    ]
+  },
+  "database.column": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random database column name.",
+    "examples": [
+      "faker.database.column() // 'createdAt'"
+    ]
+  },
+  "database.type": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random database column type.",
+    "examples": [
+      "faker.database.type() // 'timestamp'"
+    ]
+  },
+  "database.collation": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random database collation.",
+    "examples": [
+      "faker.database.collation() // 'utf8_unicode_ci'"
+    ]
+  },
+  "database.engine": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random database engine.",
+    "examples": [
+      "faker.database.engine() // 'ARCHIVE'"
+    ]
+  },
+  "database.mongodbObjectId": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a MongoDB [ObjectId](https://docs.mongodb.com/manual/reference/method/ObjectId/) string.",
+    "examples": [
+      "faker.database.mongodbObjectId() // 'e175cac316a79afdd0ad3afb'"
+    ]
+  },
+  "date.anytime": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "Date",
+    "description": "Generates a random date that can be either in the past or in the future.",
+    "examples": [
+      "faker.date.anytime() // '2022-07-31T01:33:29.567Z'"
+    ]
+  },
+  "date.past": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ years?: number; refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "Date",
+    "description": "Generates a random date in the past.",
+    "examples": [
+      "faker.date.past() // '2021-12-03T05:40:44.408Z'",
+      "faker.date.past({ years: 10 }) // '2017-10-25T21:34:19.488Z'",
+      "faker.date.past({ years: 10, refDate: '2020-01-01T00:00:00.000Z' }) // '2017-08-18T02:59:12.350Z'"
+    ]
+  },
+  "date.future": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ years?: number; refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "Date",
+    "description": "Generates a random date in the future.",
+    "examples": [
+      "faker.date.future() // '2022-11-19T05:52:49.100Z'",
+      "faker.date.future({ years: 10 }) // '2030-11-23T09:38:28.710Z'",
+      "faker.date.future({ years: 10, refDate: '2020-01-01T00:00:00.000Z' }) // '2020-12-13T22:45:10.252Z'"
+    ]
+  },
+  "date.between": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ from: string | Date | number; to: string | Date | number; }",
+        "optional": false
+      }
+    ],
+    "returnType": "Date",
+    "description": "Generates a random date between the given boundaries.",
+    "examples": [
+      "faker.date.between({ from: '2020-01-01T00:00:00.000Z', to: '2030-01-01T00:00:00.000Z' }) // '2026-05-16T02:22:53.002Z'"
+    ]
+  },
+  "date.betweens": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ from: string | Date | number; to: string | Date | number; count?: number | { min: number; max: number; }; }",
+        "optional": false
+      }
+    ],
+    "returnType": "Date[]",
+    "description": "Generates random dates between the given boundaries. The dates will be returned in an array sorted in chronological order.",
+    "examples": [
+      "faker.date.betweens({ from: '2020-01-01T00:00:00.000Z', to: '2030-01-01T00:00:00.000Z' })",
+      "faker.date.betweens({ from: '2020-01-01T00:00:00.000Z', to: '2030-01-01T00:00:00.000Z', count: 2 })",
+      "faker.date.betweens({ from: '2020-01-01T00:00:00.000Z', to: '2030-01-01T00:00:00.000Z', count: { min: 2, max: 5 }})"
+    ]
+  },
+  "date.recent": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ days?: number; refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "Date",
+    "description": "Generates a random date in the recent past.",
+    "examples": [
+      "faker.date.recent() // '2022-02-04T02:09:35.077Z'",
+      "faker.date.recent({ days: 10 }) // '2022-01-29T06:12:12.829Z'",
+      "faker.date.recent({ days: 10, refDate: '2020-01-01T00:00:00.000Z' }) // '2019-12-27T18:11:19.117Z'"
+    ]
+  },
+  "date.soon": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ days?: number; refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "Date",
+    "description": "Generates a random date in the near future.",
+    "examples": [
+      "faker.date.soon() // '2022-02-05T09:55:39.216Z'",
+      "faker.date.soon({ days: 10 }) // '2022-02-11T05:14:39.138Z'",
+      "faker.date.soon({ days: 10, refDate: '2020-01-01T00:00:00.000Z' }) // '2020-01-01T02:40:44.990Z'"
+    ]
+  },
+  "date.birthdate": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "Date",
+    "description": "Returns a random birthdate. By default, the birthdate is generated for an adult between 18 and 80 years old.",
+    "examples": [
+      "faker.date.birthdate() // '1977-07-10T01:37:30.719Z'"
+    ]
+  },
+  "date.month": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ abbreviated?: boolean; context?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random name of a month.",
+    "examples": [
+      "faker.date.month() // 'October'",
+      "faker.date.month({ abbreviated: true }) // 'Feb'",
+      "faker.date.month({ context: true }) // 'June'",
+      "faker.date.month({ abbreviated: true, context: true }) // 'Sep'"
+    ]
+  },
+  "date.weekday": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ abbreviated?: boolean; context?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random day of the week.",
+    "examples": [
+      "faker.date.weekday() // 'Monday'",
+      "faker.date.weekday({ abbreviated: true }) // 'Thu'",
+      "faker.date.weekday({ context: true }) // 'Thursday'",
+      "faker.date.weekday({ abbreviated: true, context: true }) // 'Fri'"
+    ]
+  },
+  "date.timeZone": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random IANA time zone name.",
+    "examples": [
+      "faker.location.timeZone() // 'Pacific/Guam'"
+    ]
+  },
+  "string.fromCharacters": {
+    "params": [
+      {
+        "name": "characters",
+        "type": "string | ReadonlyArray<string>",
+        "optional": false
+      },
+      {
+        "name": "length",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a string from the given characters.",
+    "examples": [
+      "faker.string.fromCharacters('abc') // 'c'",
+      "faker.string.fromCharacters(['a', 'b', 'c']) // 'a'",
+      "faker.string.fromCharacters('abc', 10) // 'cbbbacbacb'",
+      "faker.string.fromCharacters('abc', { min: 5, max: 10 }) // 'abcaaaba'"
+    ]
+  },
+  "string.alpha": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; casing?: Casing; exclude?: ReadonlyArray<LiteralUnion<AlphaChar>> | string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generating a string consisting of letters in the English alphabet.",
+    "examples": [
+      "faker.string.alpha() // 'b'",
+      "faker.string.alpha(10) // 'fEcAaCVbaR'",
+      "faker.string.alpha({ length: { min: 5, max: 10 } }) // 'HcVrCf'",
+      "faker.string.alpha({ casing: 'lower' }) // 'r'",
+      "faker.string.alpha({ exclude: ['W'] }) // 'Z'",
+      "faker.string.alpha({ length: 5, casing: 'upper', exclude: ['A'] }) // 'DTCIC'"
+    ]
+  },
+  "string.alphanumeric": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; casing?: Casing; exclude?: ReadonlyArray<LiteralUnion<AlphaNumericChar>> | string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generating a string consisting of alpha characters and digits.",
+    "examples": [
+      "faker.string.alphanumeric() // '2'",
+      "faker.string.alphanumeric(5) // '3e5V7'",
+      "faker.string.alphanumeric({ length: { min: 5, max: 10 } }) // 'muaApG'",
+      "faker.string.alphanumeric({ casing: 'upper' }) // 'A'",
+      "faker.string.alphanumeric({ exclude: ['W'] }) // 'r'",
+      "faker.string.alphanumeric({ length: 5, exclude: [\"a\"] }) // 'x1Z7f'"
+    ]
+  },
+  "string.binary": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ length?: number | { min: number; max: number; }; prefix?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a [binary](https://en.wikipedia.org/wiki/Binary_number) string.",
+    "examples": [
+      "faker.string.binary() // '0b1'",
+      "faker.string.binary({ length: 10 }) // '0b1101011011'",
+      "faker.string.binary({ length: { min: 5, max: 10 } }) // '0b11101011'",
+      "faker.string.binary({ prefix: '0b' }) // '0b1'",
+      "faker.string.binary({ length: 10, prefix: 'bin_' }) // 'bin_1101011011'"
+    ]
+  },
+  "string.octal": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ length?: number | { min: number; max: number; }; prefix?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns an [octal](https://en.wikipedia.org/wiki/Octal) string.",
+    "examples": [
+      "faker.string.octal() // '0o3'",
+      "faker.string.octal({ length: 10 }) // '0o1526216210'",
+      "faker.string.octal({ length: { min: 5, max: 10 } }) // '0o15263214'",
+      "faker.string.octal({ prefix: '0o' }) // '0o7'",
+      "faker.string.octal({ length: 10, prefix: 'oct_' }) // 'oct_1542153414'"
+    ]
+  },
+  "string.hexadecimal": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ length?: number | { min: number; max: number; }; casing?: Casing; prefix?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) string.",
+    "examples": [
+      "faker.string.hexadecimal() // '0xB'",
+      "faker.string.hexadecimal({ length: 10 }) // '0xaE13d044cB'",
+      "faker.string.hexadecimal({ length: { min: 5, max: 10 } }) // '0x7dEf7FCD'",
+      "faker.string.hexadecimal({ prefix: '0x' }) // '0xE'",
+      "faker.string.hexadecimal({ casing: 'lower' }) // '0xf'",
+      "faker.string.hexadecimal({ length: 10, prefix: '#' }) // '#f12a974eB1'",
+      "faker.string.hexadecimal({ length: 10, casing: 'upper' }) // '0xE3F38014FB'",
+      "faker.string.hexadecimal({ casing: 'lower', prefix: '' }) // 'd'",
+      "faker.string.hexadecimal({ length: 10, casing: 'mixed', prefix: '0x' }) // '0xAdE330a4D1'"
+    ]
+  },
+  "string.numeric": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; allowLeadingZeros?: boolean; exclude?: ReadonlyArray<LiteralUnion<NumericChar>> | string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a given length string of digits.",
+    "examples": [
+      "faker.string.numeric() // '2'",
+      "faker.string.numeric(5) // '31507'",
+      "faker.string.numeric(42) // '06434563150765416546479875435481513188548'",
+      "faker.string.numeric({ length: { min: 5, max: 10 } }) // '197089478'",
+      "faker.string.numeric({ length: 42, allowLeadingZeros: false }) // '72564846278453876543517840713421451546115'",
+      "faker.string.numeric({ length: 6, exclude: ['0'] }) // '943228'"
+    ]
+  },
+  "string.sample": {
+    "params": [
+      {
+        "name": "length",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a string containing UTF-16 chars between 33 and 125 (`!` to `}`).",
+    "examples": [
+      "faker.string.sample() // 'Zo!.:*e>wR'",
+      "faker.string.sample(5) // '6Bye8'",
+      "faker.string.sample({ min: 5, max: 10 }) // 'FeKunG'"
+    ]
+  },
+  "string.uuid": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a UUID ([Universally Unique Identifier](https://en.wikipedia.org/wiki/Universally_unique_identifier)).",
+    "examples": [
+      "faker.string.uuid() // '4136cd0b-d90b-4af7-b485-5d1ded8db252'"
+    ]
+  },
+  "string.ulid": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a ULID ([Universally Unique Lexicographically Sortable Identifier](https://github.com/ulid/spec)).",
+    "examples": [
+      "faker.string.ulid() // '01ARZ3NDEKTSV4RRFFQ69G5FAV'",
+      "faker.string.ulid({ refDate: '2020-01-01T00:00:00.000Z' }) // '01DXF6DT00CX9QNNW7PNXQ3YR8'"
+    ]
+  },
+  "string.nanoid": {
+    "params": [
+      {
+        "name": "length",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a [Nano ID](https://github.com/ai/nanoid).",
+    "examples": [
+      "faker.string.nanoid() // ptL0KpX_yRMI98JFr6B3n",
+      "faker.string.nanoid(10) // VsvwSdm_Am",
+      "faker.string.nanoid({ min: 13, max: 37 }) // KIRsdEL9jxVgqhBDlm"
+    ]
+  },
+  "string.symbol": {
+    "params": [
+      {
+        "name": "length",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a string containing only special characters from the following list:",
+    "examples": [
+      "faker.string.symbol() // '$'",
+      "faker.string.symbol(5) // '#*!.~'",
+      "faker.string.symbol({ min: 5, max: 10 }) // ')|@*>^+'"
+    ]
+  },
+  "finance.accountNumber": {
+    "params": [
+      {
+        "name": "length",
+        "type": "number",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random account number.",
+    "examples": [
+      "faker.finance.accountNumber() // '92842238'",
+      "faker.finance.accountNumber(5) // '32564'"
+    ]
+  },
+  "finance.accountName": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random account name.",
+    "examples": [
+      "faker.finance.accountName() // 'Personal Loan Account'"
+    ]
+  },
+  "finance.routingNumber": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random routing number.",
+    "examples": [
+      "faker.finance.routingNumber() // '522814402'"
+    ]
+  },
+  "finance.amount": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ min?: number; max?: number; dec?: number; symbol?: string; autoFormat?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random amount between the given bounds (inclusive).",
+    "examples": [
+      "faker.finance.amount() // '617.87'",
+      "faker.finance.amount({ min: 5, max: 10 }) // '5.53'",
+      "faker.finance.amount({ min: 5, max: 10, dec: 0 }) // '8'",
+      "faker.finance.amount({ min: 5, max: 10, dec: 2, symbol: '$' }) // '$5.85'",
+      "faker.finance.amount({ min: 5, max: 10, dec: 5, symbol: '', autoFormat: true }) // '9,75067'"
+    ]
+  },
+  "finance.transactionType": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random transaction type.",
+    "examples": [
+      "faker.finance.transactionType() // 'payment'"
+    ]
+  },
+  "finance.currency": {
+    "params": [],
+    "returnType": "Currency",
+    "description": "Returns a random currency object, containing `code`, `name`, `symbol`, and `numericCode` properties.",
+    "examples": [
+      "faker.finance.currency() // { code: 'USD', name: 'US Dollar', symbol: '$', numericCode: '840' }"
+    ]
+  },
+  "finance.currencyCode": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random currency code.",
+    "examples": [
+      "faker.finance.currencyCode() // 'USD'"
+    ]
+  },
+  "finance.currencyName": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random currency name.",
+    "examples": [
+      "faker.finance.currencyName() // 'US Dollar'"
+    ]
+  },
+  "finance.currencySymbol": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random currency symbol.",
+    "examples": [
+      "faker.finance.currencySymbol() // '$'"
+    ]
+  },
+  "finance.currencyNumericCode": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random currency numeric code.",
+    "examples": [
+      "faker.finance.currencyNumericCode() // '840'"
+    ]
+  },
+  "finance.bitcoinAddress": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ type?: BitcoinAddressFamilyType; network?: BitcoinNetworkType; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random Bitcoin address.",
+    "examples": [
+      "faker.finance.bitcoinAddress() // '1TeZEFLmGPLEQrSRdAcnZLoWwYeiHwmRog'",
+      "faker.finance.bitcoinAddress({ type: 'bech32' }) // 'bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4'",
+      "faker.finance.bitcoinAddress({ type: 'bech32', network: 'testnet' }) // 'tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx'"
+    ]
+  },
+  "finance.litecoinAddress": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random Litecoin address.",
+    "examples": [
+      "faker.finance.litecoinAddress() // 'MoQaSTGWBRXkWfyxKbNKuPrAWGELzcW'"
+    ]
+  },
+  "finance.creditCardNumber": {
+    "params": [
+      {
+        "name": "issuer",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random credit card number.",
+    "examples": [
+      "faker.finance.creditCardNumber() // '4427163488662'",
+      "faker.finance.creditCardNumber('visa') // '4882664999007'",
+      "faker.finance.creditCardNumber('63[7-9]#-####-####-###L') // '6375-3265-4676-6646'"
+    ]
+  },
+  "finance.creditCardCVV": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random credit card CVV.",
+    "examples": [
+      "faker.finance.creditCardCVV() // '506'"
+    ]
+  },
+  "finance.creditCardIssuer": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random credit card issuer.",
+    "examples": [
+      "faker.finance.creditCardIssuer() // 'discover'"
+    ]
+  },
+  "finance.pin": {
+    "params": [
+      {
+        "name": "length",
+        "type": "number",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random PIN number.",
+    "examples": [
+      "faker.finance.pin() // '5067'",
+      "faker.finance.pin(6) // '213789'"
+    ]
+  },
+  "finance.ethereumAddress": {
+    "params": [],
+    "returnType": "string",
+    "description": "Creates a random, non-checksum Ethereum address.",
+    "examples": [
+      "faker.finance.ethereumAddress() // '0xf03dfeecbafc5147241cc4c4ca20b3c9dfd04c4a'"
+    ]
+  },
+  "finance.iban": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ formatted?: boolean; countryCode?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random IBAN.",
+    "examples": [
+      "faker.finance.iban() // 'TR736918640040966092800056'",
+      "faker.finance.iban({ formatted: true }) // 'FR20 8008 2330 8984 74S3 Z620 224'",
+      "faker.finance.iban({ formatted: true, countryCode: 'DE' }) // 'DE84 1022 7075 0900 1170 01'"
+    ]
+  },
+  "finance.bic": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ includeBranchCode?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random SWIFT/BIC code based on the [ISO-9362](https://en.wikipedia.org/wiki/ISO_9362) format.",
+    "examples": [
+      "faker.finance.bic() // 'WYAUPGX1'",
+      "faker.finance.bic({ includeBranchCode: true }) // 'KCAUPGR1432'",
+      "faker.finance.bic({ includeBranchCode: false }) // 'XDAFQGT7'"
+    ]
+  },
+  "finance.transactionDescription": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random transaction description.",
+    "examples": [
+      "faker.finance.transactionDescription()"
+    ]
+  },
+  "food.adjective": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random dish adjective.",
+    "examples": [
+      "faker.food.adjective() // 'crispy'"
+    ]
+  },
+  "food.description": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random dish description.",
+    "examples": [
+      "faker.food.description() // 'An exquisite ostrich roast, infused with the essence of longan, slow-roasted to bring out its natural flavors and served with a side of creamy red cabbage'"
+    ]
+  },
+  "food.dish": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random dish name.",
+    "examples": [
+      "faker.food.dish() // 'Tagine-Rubbed Venison Salad'"
+    ]
+  },
+  "food.ethnicCategory": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random food's ethnic category.",
+    "examples": [
+      "faker.food.ethnicCategory() // 'Italian'"
+    ]
+  },
+  "food.fruit": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random fruit name.",
+    "examples": [
+      "faker.food.fruit() // 'lemon'"
+    ]
+  },
+  "food.ingredient": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random ingredient name.",
+    "examples": [
+      "faker.food.ingredient() // 'butter'"
+    ]
+  },
+  "food.meat": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random meat",
+    "examples": [
+      "faker.food.meat() // 'venison'"
+    ]
+  },
+  "food.spice": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random spice name.",
+    "examples": [
+      "faker.food.spice() // 'chilli'"
+    ]
+  },
+  "food.vegetable": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random vegetable name.",
+    "examples": [
+      "faker.food.vegetable() // 'broccoli'"
+    ]
+  },
+  "git.branch": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random branch name.",
+    "examples": [
+      "faker.git.branch() // 'feed-parse'"
+    ]
+  },
+  "git.commitEntry": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ merge?: boolean; eol?: 'LF' | 'CRLF'; refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random commit entry as printed by `git log`.",
+    "examples": [
+      "faker.git.commitEntry()"
+    ]
+  },
+  "git.commitMessage": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random commit message.",
+    "examples": [
+      "faker.git.commitMessage() // 'reboot cross-platform driver'"
+    ]
+  },
+  "git.commitDate": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a date string for a git commit using the same format as `git log`.",
+    "examples": [
+      "faker.git.commitDate() // 'Mon Nov 7 14:40:58 2022 +0600'",
+      "faker.git.commitDate({ refDate: '2020-01-01' }) // 'Tue Dec 31 05:40:59 2019 -0400'"
+    ]
+  },
+  "git.commitSha": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ length?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random commit sha.",
+    "examples": [
+      "faker.git.commitSha() // '2c6e3880fd94ddb7ef72d34e683cdc0c47bec6e6'",
+      "faker.git.commitSha({ length: 7 }) // 'dbee57b'",
+      "faker.git.commitSha({ length: 8 }) // '0e52376a'"
+    ]
+  },
+  "hacker.abbreviation": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random hacker/IT abbreviation.",
+    "examples": [
+      "faker.hacker.abbreviation() // 'THX'"
+    ]
+  },
+  "hacker.adjective": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random hacker/IT adjective.",
+    "examples": [
+      "faker.hacker.adjective() // 'cross-platform'"
+    ]
+  },
+  "hacker.noun": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random hacker/IT noun.",
+    "examples": [
+      "faker.hacker.noun() // 'system'"
+    ]
+  },
+  "hacker.verb": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random hacker/IT verb.",
+    "examples": [
+      "faker.hacker.verb() // 'copy'"
+    ]
+  },
+  "hacker.ingverb": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random hacker/IT verb for continuous actions (en: ing suffix; e.g. hacking).",
+    "examples": [
+      "faker.hacker.ingverb() // 'navigating'"
+    ]
+  },
+  "hacker.phrase": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random hacker/IT phrase.",
+    "examples": [
+      "faker.hacker.phrase()"
+    ]
+  },
+  "helpers.slugify": {
+    "params": [
+      {
+        "name": "string",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Slugifies the given string.",
+    "examples": [
+      "faker.helpers.slugify() // ''",
+      "faker.helpers.slugify(\"Hello world!\") // 'Hello-world'"
+    ]
+  },
+  "helpers.replaceSymbols": {
+    "params": [
+      {
+        "name": "string",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Parses the given string symbol by symbols and replaces the placeholder appropriately.",
+    "examples": [
+      "faker.helpers.replaceSymbols() // ''",
+      "faker.helpers.replaceSymbols('#####') // '98441'",
+      "faker.helpers.replaceSymbols('?????') // 'ZYRQQ'",
+      "faker.helpers.replaceSymbols('*****') // '4Z3P7'",
+      "faker.helpers.replaceSymbols('Your pin is: #?*#?*') // 'Your pin is: 0T85L1'"
+    ]
+  },
+  "helpers.replaceCreditCardSymbols": {
+    "params": [
+      {
+        "name": "string",
+        "type": "string",
+        "optional": true
+      },
+      {
+        "name": "symbol",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Replaces the symbols and patterns in a credit card schema including Luhn checksum.",
+    "examples": [
+      "faker.helpers.replaceCreditCardSymbols() // '6453-4876-8626-8995-3771'",
+      "faker.helpers.replaceCreditCardSymbols('1234-[4-9]-##!!-L') // '1234-9-5298-2'"
+    ]
+  },
+  "helpers.fromRegExp": {
+    "params": [
+      {
+        "name": "pattern",
+        "type": "string | RegExp",
+        "optional": false
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a string matching the given regex like expressions.",
+    "examples": [
+      "faker.helpers.fromRegExp('#{5}') // '#####'",
+      "faker.helpers.fromRegExp('#{2,9}') // '#######'",
+      "faker.helpers.fromRegExp('[1-7]') // '5'",
+      "faker.helpers.fromRegExp('#{3}test[1-5]') // '###test3'",
+      "faker.helpers.fromRegExp('[0-9a-dmno]') // '5'",
+      "faker.helpers.fromRegExp('[^a-zA-Z0-8]') // '9'",
+      "faker.helpers.fromRegExp('[a-d0-6]{2,8}') // 'a0dc45b0'",
+      "faker.helpers.fromRegExp('[-a-z]{5}') // 'a-zab'",
+      "faker.helpers.fromRegExp(/[A-Z0-9]{4}-[A-Z0-9]{4}/) // 'BS4G-485H'",
+      "faker.helpers.fromRegExp(/[A-Z]{5}/i) // 'pDKfh'",
+      "faker.helpers.fromRegExp(/.{5}/) // '14(#B'",
+      "faker.helpers.fromRegExp(/Joh?n/) // 'Jon'",
+      "faker.helpers.fromRegExp(/ABC*DE/) // 'ABDE'",
+      "faker.helpers.fromRegExp(/bee+p/) // 'beeeeeeeep'"
+    ]
+  },
+  "helpers.shuffle": {
+    "params": [
+      {
+        "name": "list",
+        "type": "T[]",
+        "optional": false
+      },
+      {
+        "name": "options",
+        "type": "{ inplace: true; }",
+        "optional": false
+      }
+    ],
+    "returnType": "T[]",
+    "description": "Takes an array and randomizes it in place then returns it.",
+    "examples": [
+      "faker.helpers.shuffle(['a', 'b', 'c'], { inplace: true }) // [ 'b', 'c', 'a' ]"
+    ]
+  },
+  "helpers.uniqueArray": {
+    "params": [
+      {
+        "name": "source",
+        "type": "ReadonlyArray<T> | (() => T)",
+        "optional": false
+      },
+      {
+        "name": "length",
+        "type": "number",
+        "optional": false
+      }
+    ],
+    "returnType": "T[]",
+    "description": "Takes an array of strings or function that returns a string",
+    "examples": [
+      "faker.helpers.uniqueArray(faker.word.sample, 3) // ['mob', 'junior', 'ripe']",
+      "faker.helpers.uniqueArray(faker.definitions.person.first_name.generic, 6) // ['Silas', 'Montana', 'Lorenzo', 'Alayna', 'Aditya', 'Antone']",
+      "faker.helpers.uniqueArray([\"Hello\", \"World\", \"Goodbye\"], 2) // ['World', 'Goodbye']"
+    ]
+  },
+  "helpers.mustache": {
+    "params": [
+      {
+        "name": "text",
+        "type": "string | undefined",
+        "optional": false
+      },
+      {
+        "name": "data",
+        "type": "Record<string, string | Parameters<string['replace']>[1]>",
+        "optional": false
+      }
+    ],
+    "returnType": "string",
+    "description": "Replaces the `{{placeholder}}` patterns in the given string mustache style.",
+    "examples": [
+      "faker.helpers.mustache('I found {{count}} instances of \"{{word}}\".', {"
+    ]
+  },
+  "helpers.objectKey": {
+    "params": [
+      {
+        "name": "object",
+        "type": "T",
+        "optional": false
+      }
+    ],
+    "returnType": "keyof T",
+    "description": "Returns a random key from the given object.",
+    "examples": [
+      "faker.helpers.objectKey({ Cheetah: 120, Falcon: 390, Snail: 0.03 }) // 'Falcon'"
+    ]
+  },
+  "helpers.objectValue": {
+    "params": [
+      {
+        "name": "object",
+        "type": "T",
+        "optional": false
+      }
+    ],
+    "returnType": "T[keyof T]",
+    "description": "Returns a random value from the given object.",
+    "examples": [
+      "faker.helpers.objectValue({ Cheetah: 120, Falcon: 390, Snail: 0.03 }) // 390"
+    ]
+  },
+  "helpers.objectEntry": {
+    "params": [
+      {
+        "name": "object",
+        "type": "T",
+        "optional": false
+      }
+    ],
+    "returnType": "[keyof T, T[keyof T]]",
+    "description": "Returns a random `[key, value]` pair from the given object.",
+    "examples": [
+      "faker.helpers.objectEntry({ Cheetah: 120, Falcon: 390, Snail: 0.03 }) // ['Snail', 0.03]"
+    ]
+  },
+  "helpers.arrayElement": {
+    "params": [
+      {
+        "name": "array",
+        "type": "ReadonlyArray<T>",
+        "optional": false
+      }
+    ],
+    "returnType": "T",
+    "description": "Returns random element from the given array.",
+    "examples": [
+      "faker.helpers.arrayElement(['cat', 'dog', 'mouse']) // 'dog'"
+    ]
+  },
+  "helpers.weightedArrayElement": {
+    "params": [
+      {
+        "name": "array",
+        "type": "ReadonlyArray<{ weight: number; value: T; }>",
+        "optional": false
+      }
+    ],
+    "returnType": "T",
+    "description": "Returns a weighted random element from the given array. Each element of the array should be an object with two keys `weight` and `value`.",
+    "examples": [
+      "faker.helpers.weightedArrayElement([{ weight: 5, value: 'sunny' }, { weight: 4, value: 'rainy' }, { weight: 1, value: 'snowy' }]) // 'sunny', 50% of the time, 'rainy' 40% of the time, 'snowy' 10% of the time"
+    ]
+  },
+  "helpers.arrayElements": {
+    "params": [
+      {
+        "name": "array",
+        "type": "ReadonlyArray<T>",
+        "optional": false
+      },
+      {
+        "name": "count",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "T[]",
+    "description": "Returns a subset with random elements of the given array in random order.",
+    "examples": [
+      "faker.helpers.arrayElements(['cat', 'dog', 'mouse']) // ['mouse', 'cat']",
+      "faker.helpers.arrayElements([1, 2, 3, 4, 5], 2) // [4, 2]",
+      "faker.helpers.arrayElements([1, 2, 3, 4, 5], { min: 2, max: 4 }) // [3, 5, 1]"
+    ]
+  },
+  "helpers.enumValue": {
+    "params": [
+      {
+        "name": "enumObject",
+        "type": "T",
+        "optional": false
+      }
+    ],
+    "returnType": "T[keyof T]",
+    "description": "Returns a random value from an Enum object.",
+    "examples": [
+      "faker.helpers.enumValue(Color) // 1 (Green)",
+      "faker.helpers.enumValue(Direction) // 'South'",
+      "faker.helpers.enumValue(HttpStatus) // 200 (Ok)"
+    ]
+  },
+  "helpers.rangeToNumber": {
+    "params": [
+      {
+        "name": "numberOrRange",
+        "type": "number | { min: number; max: number; }",
+        "optional": false
+      }
+    ],
+    "returnType": "number",
+    "description": "Helper method that converts the given number or range to a number.",
+    "examples": [
+      "faker.helpers.rangeToNumber(1) // 1",
+      "faker.helpers.rangeToNumber({ min: 1, max: 10 }) // 5"
+    ]
+  },
+  "helpers.fake": {
+    "params": [
+      {
+        "name": "pattern",
+        "type": "string",
+        "optional": false
+      }
+    ],
+    "returnType": "string",
+    "description": "Generator for combining faker methods based on a static string input.",
+    "examples": [
+      "faker.helpers.fake('{{person.lastName}}') // 'Barrows'",
+      "faker.helpers.fake('{{person.lastName}}, {{person.firstName}} {{person.suffix}}') // 'Durgan, Noe MD'",
+      "faker.helpers.fake('This is static test.') // 'This is static test.'",
+      "faker.helpers.fake('Good Morning {{person.firstName}}!') // 'Good Morning Estelle!'",
+      "faker.helpers.fake('You can visit me at {{location.streetAddress(true)}}.') // 'You can visit me at 3393 Ronny Way Apt. 742.'",
+      "faker.helpers.fake('I flipped the coin and got: {{helpers.arrayElement([\"heads\", \"tails\"])}}') // 'I flipped the coin and got: tails'",
+      "faker.helpers.fake('Your PIN number is: {{string.numeric(4, {\"exclude\": [\"0\"]})}}') // 'Your PIN number is: 4834'"
+    ]
+  },
+  "person.firstName": {
+    "params": [
+      {
+        "name": "sex",
+        "type": "SexType",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random first name.",
+    "examples": [
+      "faker.person.firstName() // 'Antwan'",
+      "faker.person.firstName('female') // 'Victoria'",
+      "faker.person.firstName('male') // 'Tom'"
+    ]
+  },
+  "person.lastName": {
+    "params": [
+      {
+        "name": "sex",
+        "type": "SexType",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random last name.",
+    "examples": [
+      "faker.person.lastName() // 'Hauck'",
+      "faker.person.lastName('female') // 'Grady'",
+      "faker.person.lastName('male') // 'Barton'"
+    ]
+  },
+  "person.middleName": {
+    "params": [
+      {
+        "name": "sex",
+        "type": "SexType",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random middle name.",
+    "examples": [
+      "faker.person.middleName() // 'James'",
+      "faker.person.middleName('female') // 'Eloise'",
+      "faker.person.middleName('male') // 'Asher'"
+    ]
+  },
+  "person.fullName": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ firstName?: string; lastName?: string; sex?: SexType; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random full name.",
+    "examples": [
+      "faker.person.fullName() // 'Allen Brown'",
+      "faker.person.fullName({ firstName: 'Joann' }) // 'Joann Osinski'",
+      "faker.person.fullName({ firstName: 'Marcella', sex: 'female' }) // 'Mrs. Marcella Huels'",
+      "faker.person.fullName({ lastName: 'Beer' }) // 'Mr. Alfonso Beer'",
+      "faker.person.fullName({ sex: 'male' }) // 'Fernando Schaefer'"
+    ]
+  },
+  "person.gender": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random gender.",
+    "examples": [
+      "faker.person.gender() // 'Trans*Man'"
+    ]
+  },
+  "person.sex": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random sex.",
+    "examples": [
+      "faker.person.sex() // 'female'"
+    ]
+  },
+  "person.sexType": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ includeGeneric?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "SexType",
+    "description": "Returns a random sex type. The `SexType` is intended to be used in parameters and conditions.",
+    "examples": [
+      "faker.person.sexType() // Sex.Female",
+      "faker.person.sexType({ includeGeneric: true }) // Sex.Generic"
+    ]
+  },
+  "person.bio": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random short biography",
+    "examples": [
+      "faker.person.bio() // 'oatmeal advocate, veteran 🐠'"
+    ]
+  },
+  "person.prefix": {
+    "params": [
+      {
+        "name": "sex",
+        "type": "SexType",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random person prefix.",
+    "examples": [
+      "faker.person.prefix() // 'Miss'",
+      "faker.person.prefix('female') // 'Ms.'",
+      "faker.person.prefix('male') // 'Mr.'"
+    ]
+  },
+  "person.suffix": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random person suffix.",
+    "examples": [
+      "faker.person.suffix() // 'DDS'"
+    ]
+  },
+  "person.jobTitle": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random job title.",
+    "examples": [
+      "faker.person.jobTitle() // 'Global Accounts Engineer'"
+    ]
+  },
+  "person.jobDescriptor": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random job descriptor.",
+    "examples": [
+      "faker.person.jobDescriptor() // 'Customer'"
+    ]
+  },
+  "person.jobArea": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random job area.",
+    "examples": [
+      "faker.person.jobArea() // 'Brand'"
+    ]
+  },
+  "person.jobType": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random job type.",
+    "examples": [
+      "faker.person.jobType() // 'Assistant'"
+    ]
+  },
+  "person.zodiacSign": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random zodiac sign.",
+    "examples": [
+      "faker.person.zodiacSign() // 'Pisces'"
+    ]
+  },
+  "image.avatar": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random avatar image url.",
+    "examples": [
+      "faker.image.avatar()"
+    ]
+  },
+  "image.avatarGitHub": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random avatar from GitHub.",
+    "examples": [
+      "faker.image.avatarGitHub()"
+    ]
+  },
+  "image.personPortrait": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ sex?: SexType; size?: 512 | 256 | 128 | 64 | 32; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random square portrait (avatar) of a person.",
+    "examples": [
+      "faker.image.personPortrait() // 'https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/57.jpg'",
+      "faker.image.personPortrait({ sex: 'male', size: '128' }) // 'https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/128/27.jpg'"
+    ]
+  },
+  "image.url": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ width?: number; height?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random image url.",
+    "examples": [
+      "faker.image.url() // 'https://picsum.photos/seed/NWbJM2B/640/480'"
+    ]
+  },
+  "image.urlLoremFlickr": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ width?: number; height?: number; category?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random image url provided via https://loremflickr.com.",
+    "examples": [
+      "faker.image.urlLoremFlickr() // 'https://loremflickr.com/640/480?lock=1234'",
+      "faker.image.urlLoremFlickr({ width: 128 }) // 'https://loremflickr.com/128/480?lock=1234'",
+      "faker.image.urlLoremFlickr({ height: 128 }) // 'https://loremflickr.com/640/128?lock=1234'",
+      "faker.image.urlLoremFlickr({ category: 'nature' }) // 'https://loremflickr.com/640/480/nature?lock=1234'"
+    ]
+  },
+  "image.urlPicsumPhotos": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ width?: number; height?: number; grayscale?: boolean; blur?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random image url provided via https://picsum.photos.",
+    "examples": [
+      "faker.image.urlPicsumPhotos() // 'https://picsum.photos/seed/NWbJM2B/640/480'",
+      "faker.image.urlPicsumPhotos({ width: 128 }) // 'https://picsum.photos/seed/NWbJM2B/128/480'",
+      "faker.image.urlPicsumPhotos({ height: 128 }) // 'https://picsum.photos/seed/NWbJM2B/640/128'",
+      "faker.image.urlPicsumPhotos({ grayscale: true }) // 'https://picsum.photos/seed/NWbJM2B/640/480?grayscale'",
+      "faker.image.urlPicsumPhotos({ blur: 4 }) // 'https://picsum.photos/seed/NWbJM2B/640/480?blur=4'",
+      "faker.image.urlPicsumPhotos({ blur: 4, grayscale: true }) // 'https://picsum.photos/seed/NWbJM2B/640/480?grayscale&blur=4'"
+    ]
+  },
+  "image.dataUri": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ width?: number; height?: number; color?: string; type?: 'svg-uri' | 'svg-base64'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random data uri containing an URL-encoded SVG image or a Base64-encoded SVG image.",
+    "examples": [
+      "faker.image.dataUri() // 'data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http...'",
+      "faker.image.dataUri({ type: 'svg-base64' }) // 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3...'"
+    ]
+  },
+  "internet.email": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ firstName?: string; lastName?: string; provider?: string; allowSpecialCharacters?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates an email address using the given person's name as base.",
+    "examples": [
+      "faker.internet.email() // 'Kassandra4@hotmail.com'",
+      "faker.internet.email({ firstName: 'Jeanne'}) // 'Jeanne63@yahoo.com'",
+      "faker.internet.email({ firstName: 'Jeanne'}) // 'Jeanne_Smith63@yahoo.com'",
+      "faker.internet.email({ firstName: 'Jeanne', lastName: 'Doe' }) // 'Jeanne.Doe63@yahoo.com'",
+      "faker.internet.email({ firstName: 'Jeanne', lastName: 'Doe', provider: 'example.fakerjs.dev' }) // 'Jeanne_Doe88@example.fakerjs.dev'",
+      "faker.internet.email({ firstName: 'Jeanne', lastName: 'Doe', provider: 'example.fakerjs.dev', allowSpecialCharacters: true }) // 'Jeanne%Doe88@example.fakerjs.dev'"
+    ]
+  },
+  "internet.exampleEmail": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ firstName?: string; lastName?: string; allowSpecialCharacters?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates an email address using an example mail provider using the given person's name as base.",
+    "examples": [
+      "faker.internet.exampleEmail() // 'Helmer.Graham23@example.com'",
+      "faker.internet.exampleEmail({ firstName: 'Jeanne' }) // 'Jeanne96@example.net'",
+      "faker.internet.exampleEmail({ firstName: 'Jeanne' }) // 'Jeanne.Smith96@example.net'",
+      "faker.internet.exampleEmail({ firstName: 'Jeanne', lastName: 'Doe' }) // 'Jeanne_Doe96@example.net'",
+      "faker.internet.exampleEmail({ firstName: 'Jeanne', lastName: 'Doe', allowSpecialCharacters: true }) // 'Jeanne%Doe88@example.com'"
+    ]
+  },
+  "internet.username": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ firstName?: string; lastName?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a username using the given person's name as base.",
+    "examples": [
+      "faker.internet.username() // 'Nettie_Zboncak40'",
+      "faker.internet.username({ firstName: 'Jeanne' }) // 'Jeanne98'",
+      "faker.internet.username({ firstName: 'Jeanne' }) // 'Jeanne.Smith98'",
+      "faker.internet.username({ firstName: 'Jeanne', lastName: 'Doe'}) // 'Jeanne_Doe98'",
+      "faker.internet.username({ firstName: 'John', lastName: 'Doe' }) // 'John.Doe'",
+      "faker.internet.username({ firstName: 'Hélene', lastName: 'Müller' }) // 'Helene_Muller11'",
+      "faker.internet.username({ firstName: 'Фёдор', lastName: 'Достоевский' }) // 'Fedor.Dostoevskii50'",
+      "faker.internet.username({ firstName: '大羽', lastName: '陳' }) // 'hlzp8d.tpv45' - note neither name is used"
+    ]
+  },
+  "internet.displayName": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ firstName?: string; lastName?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a display name using the given person's name as base.",
+    "examples": [
+      "faker.internet.displayName() // 'Nettie_Zboncak40'",
+      "faker.internet.displayName({ firstName: 'Jeanne', lastName: 'Doe' }) // 'Jeanne98' - note surname not used.",
+      "faker.internet.displayName({ firstName: 'John', lastName: 'Doe' }) // 'John.Doe'",
+      "faker.internet.displayName({ firstName: 'Hélene', lastName: 'Müller' }) // 'Hélene_Müller11'",
+      "faker.internet.displayName({ firstName: 'Фёдор', lastName: 'Достоевский' }) // 'Фёдор.Достоевский50'",
+      "faker.internet.displayName({ firstName: '大羽', lastName: '陳' }) // '大羽.陳'"
+    ]
+  },
+  "internet.protocol": {
+    "params": [],
+    "returnType": "'http' | 'https'",
+    "description": "Returns a random web protocol. Either `http` or `https`.",
+    "examples": [
+      "faker.internet.protocol() // 'http'"
+    ]
+  },
+  "internet.httpMethod": {
+    "params": [],
+    "returnType": "'GET' | 'POST' | 'PUT' | 'DELETE' | 'PATCH'",
+    "description": "Returns a random http method.",
+    "examples": [
+      "faker.internet.httpMethod() // 'PATCH'"
+    ]
+  },
+  "internet.httpStatusCode": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ types?: ReadonlyArray<HTTPStatusCodeType>; }",
+        "optional": true
+      }
+    ],
+    "returnType": "number",
+    "description": "Generates a random HTTP status code.",
+    "examples": [
+      "faker.internet.httpStatusCode() // 200",
+      "faker.internet.httpStatusCode({ types: ['success', 'serverError'] }) // 500"
+    ]
+  },
+  "internet.url": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ appendSlash?: boolean; protocol?: HTTPProtocolType; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random http(s) url.",
+    "examples": [
+      "faker.internet.url() // 'https://remarkable-hackwork.info'",
+      "faker.internet.url({ appendSlash: true }) // 'https://slow-timer.info/'",
+      "faker.internet.url({ protocol: 'http', appendSlash: false }) // 'http://www.terrible-idea.com'"
+    ]
+  },
+  "internet.domainName": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random domain name.",
+    "examples": [
+      "faker.internet.domainName() // 'slow-timer.info'"
+    ]
+  },
+  "internet.domainSuffix": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random domain suffix.",
+    "examples": [
+      "faker.internet.domainSuffix() // 'com'",
+      "faker.internet.domainSuffix() // 'name'"
+    ]
+  },
+  "internet.domainWord": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random domain word.",
+    "examples": [
+      "faker.internet.domainWord() // 'close-reality'",
+      "faker.internet.domainWord() // 'weird-cytoplasm'"
+    ]
+  },
+  "internet.ip": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random IPv4 or IPv6 address.",
+    "examples": [
+      "faker.internet.ip() // '245.108.222.0'",
+      "faker.internet.ip() // '4e5:f9c5:4337:abfd:9caf:1135:41ad:d8d3'"
+    ]
+  },
+  "internet.ipv4": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ cidrBlock?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random IPv4 address.",
+    "examples": [
+      "faker.internet.ipv4() // '245.108.222.0'",
+      "faker.internet.ipv4({ cidrBlock: '192.168.0.0/16' }) // '192.168.215.224'"
+    ]
+  },
+  "internet.ipv6": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random IPv6 address.",
+    "examples": [
+      "faker.internet.ipv6() // '269f:1230:73e3:318d:842b:daab:326d:897b'"
+    ]
+  },
+  "internet.port": {
+    "params": [],
+    "returnType": "number",
+    "description": "Generates a random port number.",
+    "examples": [
+      "faker.internet.port() // 9414"
+    ]
+  },
+  "internet.userAgent": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random user agent string.",
+    "examples": [
+      "faker.internet.userAgent()"
+    ]
+  },
+  "internet.mac": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ separator?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random mac address.",
+    "examples": [
+      "faker.internet.mac() // '32:8e:2e:09:c6:05'"
+    ]
+  },
+  "internet.password": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ length?: number; memorable?: boolean; pattern?: RegExp; prefix?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random password-like string. Do not use this method for generating actual passwords for users.",
+    "examples": [
+      "faker.internet.password() // '89G1wJuBLbGziIs'",
+      "faker.internet.password({ length: 20 }) // 'aF55c_8O9kZaPOrysFB_'",
+      "faker.internet.password({ length: 20, memorable: true }) // 'lawetimufozujosodedi'",
+      "faker.internet.password({ length: 20, memorable: true, pattern: /[A-Z]/ }) // 'HMAQDFFYLDDUTBKVNFVS'",
+      "faker.internet.password({ length: 20, memorable: true, pattern: /[A-Z]/, prefix: 'Hello ' }) // 'Hello IREOXTDWPERQSB'"
+    ]
+  },
+  "internet.emoji": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ types?: ReadonlyArray<EmojiType>; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random emoji.",
+    "examples": [
+      "faker.internet.emoji() // '🥰'",
+      "faker.internet.emoji({ types: ['food', 'nature'] }) // '🥐'"
+    ]
+  },
+  "internet.jwtAlgorithm": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random JWT (JSON Web Token) Algorithm.",
+    "examples": [
+      "faker.internet.jwtAlgorithm() // 'HS256'",
+      "faker.internet.jwtAlgorithm() // 'RS512'"
+    ]
+  },
+  "internet.jwt": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ header?: Record<string, unknown>; payload?: Record<string, unknown>; refDate?: string | Date | number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random JWT (JSON Web Token).",
+    "examples": [
+      "faker.internet.jwt() // 'eyJhbGciOiJIUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzI2MzgxMDYsImV4cCI6MTczMjY5MjUwOSwibmJmIjoxNzA1MDgxNjQ4LCJpc3MiOiJHdXRrb3dza2kgYW5kIFNvbnMiLCJzdWIiOiJlMzQxZjMwNS0yM2I2LTRkYmQtOTY2ZC1iNDRiZmM0ZGIzMGUiLCJhdWQiOiI0YzMwZGE3Yi0zZDUzLTQ4OGUtYTAyZC0zOWI2MDZiZmYxMTciLCJqdGkiOiJiMGZmOTMzOC04ODMwLTRmNDgtYjA3Ny1kNDNmMjU2OGZlYzAifQ.oDLVR73M0u5SjMPlc1aruxbdK7l2titXSeo9J5M1JUd65a1X9MhCz7FOobtX8eaj'",
+      "faker.internet.jwt({ header: { alg: 'HS256' }}) // 'eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MTg2MTM3MTIsImV4cCI6MTcxODYzMzY3OSwibmJmIjoxNjk3MjYzNjMwLCJpc3MiOiJEb3lsZSBhbmQgU29ucyIsInN1YiI6IjYxYWRkYWFmLWY4MjktNDkzZS1iNTI1LTJjMGJkNjkzOTdjNyIsImF1ZCI6IjczNjcyMjVjLWIwMWMtNGE1My1hYzQyLTYwOWJkZmI1MzBiOCIsImp0aSI6IjU2Y2ZkZjAxLWRhMzMtNGUxNi04MzJiLTFlYTk3ZGY1MTQ2YSJ9.5iUgaCaFVPZ8d1QD0xMjoeJbmPVyUfKfoRQ6Njzm5MLp5F4UMh5REbPCrW70fAkr'",
+      "faker.internet.jwt({ payload: { iss: 'Acme' }}) // 'eyJhbGciOiJFUzM4NCIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBY21lIn0.syUt0GBukNac8Cn1AGKFq2SWAXWy1YIfl0uOYiwg6TZ3omAW0c7FGWY6bC7ZOFSt'",
+      "faker.internet.jwt({ refDate: '2020-01-01T00:00:00.000Z' }) // 'eyJhbGciOiJFUzM4NCIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzc4MDY4NDUsImV4cCI6MTU3Nzg0NjI4MCwibmJmIjoxNTgxNTQyMDYwLCJpc3MiOiJLcmVpZ2VyLCBBbHRlbndlcnRoIGFuZCBQYXVjZWsiLCJzdWIiOiI5NzVjMjMyOS02MDlhLTRjYTYtYjBkZi05ZmY4MGZiNDUwN2QiLCJhdWQiOiI0ODQxZWYwNi01OWYwLTQzMWEtYmFmZi0xMjkxZmRhZDdhNjgiLCJqdGkiOiJmNDBjZTJiYi00ZWYyLTQ1MjMtOGIxMy1kN2Q4NTA5N2M2ZTUifQ.cuClEZQ0CyPIMVS5uxrMwWXz0wcqFFdt0oNne3PMryyly0jghkxVurss2TapMC3C'"
+    ]
+  },
+  "location.latitude": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ max?: number; min?: number; precision?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "number",
+    "description": "Generates a random latitude.",
+    "examples": [
+      "faker.location.latitude() // -30.9501",
+      "faker.location.latitude({ max: 10 }) // 5.7225",
+      "faker.location.latitude({ max: 10, min: -10 }) // -9.6273",
+      "faker.location.latitude({ max: 10, min: -10, precision: 5 }) // 2.68452"
+    ]
+  },
+  "location.longitude": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ max?: number; min?: number; precision?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "number",
+    "description": "Generates a random longitude.",
+    "examples": [
+      "faker.location.longitude() // -30.9501",
+      "faker.location.longitude({ max: 10 }) // 5.7225",
+      "faker.location.longitude({ max: 10, min: -10 }) // -9.6273",
+      "faker.location.longitude({ max: 10, min: -10, precision: 5 }) // 2.68452"
+    ]
+  },
+  "location.nearbyGPSCoordinate": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ origin?: [latitude: number, longitude: number]; radius?: number; isMetric?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "[latitude: number, longitude: number]",
+    "description": "Generates a random GPS coordinate within the specified radius from the given coordinate.",
+    "examples": [
+      "faker.location.nearbyGPSCoordinate() // [ 33.8475, -170.5953 ]",
+      "faker.location.nearbyGPSCoordinate({ origin: [33, -170] }) // [ 33.0165, -170.0636 ]",
+      "faker.location.nearbyGPSCoordinate({ origin: [33, -170], radius: 1000, isMetric: true }) // [ 37.9163, -179.2408 ]"
+    ]
+  },
+  "location.zipCode": {
+    "params": [
+      {
+        "name": "options",
+        "type": "string | { state?: string; format?: string; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates random zip code from specified format. If format is not specified,",
+    "examples": [
+      "faker.location.zipCode() // '17839'",
+      "faker.location.zipCode('####') // '6925'"
+    ]
+  },
+  "location.city": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random localized city name.",
+    "examples": [
+      "faker.location.city() // 'East Jarretmouth'"
+    ]
+  },
+  "location.buildingNumber": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random building number.",
+    "examples": [
+      "faker.location.buildingNumber() // '379'"
+    ]
+  },
+  "location.street": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random localized street name.",
+    "examples": [
+      "faker.location.street() // 'Schroeder Isle'"
+    ]
+  },
+  "location.streetAddress": {
+    "params": [
+      {
+        "name": "options",
+        "type": "boolean | { useFullAddress?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random localized street address.",
+    "examples": [
+      "faker.location.streetAddress() // '0917 O'Conner Estates'",
+      "faker.location.streetAddress(false) // '34830 Erdman Hollow'",
+      "faker.location.streetAddress(true) // '3393 Ronny Way Apt. 742'",
+      "faker.location.streetAddress({ useFullAddress: true }) // '7917 Miller Park Apt. 410'"
+    ]
+  },
+  "location.secondaryAddress": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random localized secondary address. This refers to a specific location at a given address",
+    "examples": [
+      "faker.location.secondaryAddress() // 'Apt. 861'"
+    ]
+  },
+  "location.county": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random localized county, or other equivalent second-level administrative entity for the locale's country such as a district or department."
+  },
+  "location.country": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random country name.",
+    "examples": [
+      "faker.location.country() // 'Greece'"
+    ]
+  },
+  "location.continent": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random continent name.",
+    "examples": [
+      "faker.location.continent() // 'Asia'"
+    ]
+  },
+  "location.countryCode": {
+    "params": [
+      {
+        "name": "options",
+        "type": "'alpha-2' | 'alpha-3' | 'numeric' | { variant?: 'alpha-2' | 'alpha-3' | 'numeric'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random [ISO_3166-1](https://en.wikipedia.org/wiki/ISO_3166-1) country code.",
+    "examples": [
+      "faker.location.countryCode() // 'SJ'",
+      "faker.location.countryCode('alpha-2') // 'GA'",
+      "faker.location.countryCode('alpha-3') // 'TJK'",
+      "faker.location.countryCode('numeric') // '528'"
+    ]
+  },
+  "location.state": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ abbreviated?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random localized state, or other equivalent first-level administrative entity for the locale's country such as a province or region.",
+    "examples": [
+      "faker.location.state() // 'Mississippi'",
+      "faker.location.state({ abbreviated: true }) // 'LA'"
+    ]
+  },
+  "location.direction": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ abbreviated?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random direction (cardinal and ordinal; northwest, east, etc).",
+    "examples": [
+      "faker.location.direction() // 'Northeast'",
+      "faker.location.direction({ abbreviated: true }) // 'SW'"
+    ]
+  },
+  "location.cardinalDirection": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ abbreviated?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random cardinal direction (north, east, south, west).",
+    "examples": [
+      "faker.location.cardinalDirection() // 'North'",
+      "faker.location.cardinalDirection({ abbreviated: true }) // 'W'"
+    ]
+  },
+  "location.ordinalDirection": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ abbreviated?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random ordinal direction (northwest, southeast, etc).",
+    "examples": [
+      "faker.location.ordinalDirection() // 'Northeast'",
+      "faker.location.ordinalDirection({ abbreviated: true }) // 'SW'"
+    ]
+  },
+  "location.timeZone": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random IANA time zone relevant to this locale.",
+    "examples": [
+      "faker.location.timeZone() // 'Pacific/Guam'"
+    ]
+  },
+  "location.language": {
+    "params": [],
+    "returnType": "Language",
+    "description": "Returns a random spoken language.",
+    "examples": [
+      "faker.location.language() // { alpha2: 'de', alpha3: 'deu', name: 'German' }",
+      "faker.location.language().name // German",
+      "faker.location.language().alpha2 // de",
+      "faker.location.language().alpha3 // deu"
+    ]
+  },
+  "lorem.word": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a word of a specified length.",
+    "examples": [
+      "faker.lorem.word() // 'temporibus'",
+      "faker.lorem.word(5) // 'velit'",
+      "faker.lorem.word({ strategy: 'shortest' }) // 'a'",
+      "faker.lorem.word({ length: { min: 5, max: 7 }, strategy: 'fail' }) // 'quaerat'"
+    ]
+  },
+  "lorem.words": {
+    "params": [
+      {
+        "name": "wordCount",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a space separated list of words.",
+    "examples": [
+      "faker.lorem.words() // 'qui praesentium pariatur'",
+      "faker.lorem.words(10) // 'debitis consectetur voluptatem non doloremque ipsum autem totam eum ratione'",
+      "faker.lorem.words({ min: 1, max: 3 }) // 'tenetur error cum'"
+    ]
+  },
+  "lorem.sentence": {
+    "params": [
+      {
+        "name": "wordCount",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a space separated list of words beginning with a capital letter and ending with a period.",
+    "examples": [
+      "faker.lorem.sentence() // 'Voluptatum cupiditate suscipit autem eveniet aut dolorem aut officiis distinctio.'",
+      "faker.lorem.sentence(5) // 'Laborum voluptatem officiis est et.'",
+      "faker.lorem.sentence({ min: 3, max: 5 }) // 'Fugiat repellendus nisi.'"
+    ]
+  },
+  "lorem.slug": {
+    "params": [
+      {
+        "name": "wordCount",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a slugified text consisting of the given number of hyphen separated words.",
+    "examples": [
+      "faker.lorem.slug() // 'dolores-illo-est'",
+      "faker.lorem.slug(5) // 'delectus-totam-iusto-itaque-placeat'",
+      "faker.lorem.slug({ min: 1, max: 3 }) // 'illo-ratione'"
+    ]
+  },
+  "lorem.sentences": {
+    "params": [
+      {
+        "name": "sentenceCount",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      },
+      {
+        "name": "separator",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates the given number of sentences.",
+    "examples": [
+      "faker.lorem.sentences() // 'Iste molestiae incidunt aliquam possimus reprehenderit eum corrupti. Deleniti modi voluptatem nostrum ut esse.'",
+      "faker.lorem.sentences(2) // 'Maxime vel numquam quibusdam. Dignissimos ex molestias quos aut molestiae quam nihil occaecati maiores.'",
+      "faker.lorem.sentences(2, '\\n')",
+      "faker.lorem.sentences({ min: 1, max: 3 }) // 'Placeat ex natus tenetur repellendus repellendus iste. Optio nostrum veritatis.'"
+    ]
+  },
+  "lorem.paragraph": {
+    "params": [
+      {
+        "name": "sentenceCount",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a paragraph with the given number of sentences.",
+    "examples": [
+      "faker.lorem.paragraph() // 'Non architecto nam unde sint. Ex tenetur dolor facere optio aut consequatur. Ea laudantium reiciendis repellendus.'",
+      "faker.lorem.paragraph(2) // 'Animi possimus nemo consequuntur ut ea et tempore unde qui. Quis corporis esse occaecati.'",
+      "faker.lorem.paragraph({ min: 1, max: 3 }) // 'Quis doloribus necessitatibus sint. Rerum accusamus impedit corporis porro.'"
+    ]
+  },
+  "lorem.paragraphs": {
+    "params": [
+      {
+        "name": "paragraphCount",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      },
+      {
+        "name": "separator",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates the given number of paragraphs.",
+    "examples": [
+      "faker.lorem.paragraphs()",
+      "faker.lorem.paragraphs(5)",
+      "faker.lorem.paragraphs(2, '<br/>\\n')",
+      "faker.lorem.paragraphs({ min: 1, max: 3 })"
+    ]
+  },
+  "lorem.text": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates a random text based on a random lorem method.",
+    "examples": [
+      "faker.lorem.text() // 'Doloribus autem non quis vero quia.'",
+      "faker.lorem.text()"
+    ]
+  },
+  "lorem.lines": {
+    "params": [
+      {
+        "name": "lineCount",
+        "type": "number | { min: number; max: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates the given number lines of lorem separated by `'\\n'`.",
+    "examples": [
+      "faker.lorem.lines()",
+      "faker.lorem.lines()",
+      "faker.lorem.lines(2)",
+      "faker.lorem.lines({ min: 1, max: 3 })"
+    ]
+  },
+  "music.album": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random album name.",
+    "examples": [
+      "faker.music.album() // '1989'"
+    ]
+  },
+  "music.artist": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random artist name.",
+    "examples": [
+      "faker.music.artist() // 'The Beatles'"
+    ]
+  },
+  "music.genre": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random music genre.",
+    "examples": [
+      "faker.music.genre() // 'Reggae'"
+    ]
+  },
+  "music.songName": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random song name.",
+    "examples": [
+      "faker.music.songName() // 'White Christmas'"
+    ]
+  },
+  "phone.number": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ style?: 'human' | 'national' | 'international'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random phone number.",
+    "examples": [
+      "faker.phone.number() // '961-770-7727'",
+      "faker.phone.number({ style: 'human' }) // '555.770.7727 x1234'",
+      "faker.phone.number({ style: 'national' }) // '(961) 770-7727'",
+      "faker.phone.number({ style: 'international' }) // '+15551234567'"
+    ]
+  },
+  "phone.imei": {
+    "params": [],
+    "returnType": "string",
+    "description": "Generates IMEI number.",
+    "examples": [
+      "faker.phone.imei() // '13-850175-913761-7'"
+    ]
+  },
+  "science.chemicalElement": {
+    "params": [],
+    "returnType": "ChemicalElement",
+    "description": "Returns a random periodic table element.",
+    "examples": [
+      "faker.science.chemicalElement() // { symbol: 'H', name: 'Hydrogen', atomicNumber: 1 }",
+      "faker.science.chemicalElement() // { symbol: 'Xe', name: 'Xenon', atomicNumber: 54 }",
+      "faker.science.chemicalElement() // { symbol: 'Ce', name: 'Cerium', atomicNumber: 58 }"
+    ]
+  },
+  "science.unit": {
+    "params": [],
+    "returnType": "Unit",
+    "description": "Returns a random scientific unit.",
+    "examples": [
+      "faker.science.unit() // { name: 'meter', symbol: 'm' }",
+      "faker.science.unit() // { name: 'second', symbol: 's' }",
+      "faker.science.unit() // { name: 'mole', symbol: 'mol' }"
+    ]
+  },
+  "system.fileName": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ extensionCount?: number | { min: number; max: number; }; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random file name with extension.",
+    "examples": [
+      "faker.system.fileName() // 'faithfully_calculating.u8mdn'",
+      "faker.system.fileName({ extensionCount: 2 }) // 'times_after.swf.ntf'",
+      "faker.system.fileName({ extensionCount: { min: 1, max: 2 } }) // 'jaywalk_like_ill.osfpvg'"
+    ]
+  },
+  "system.commonFileName": {
+    "params": [
+      {
+        "name": "extension",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random file name with a given extension or a commonly used extension.",
+    "examples": [
+      "faker.system.commonFileName() // 'dollar.jpg'",
+      "faker.system.commonFileName('txt') // 'global_borders_wyoming.txt'"
+    ]
+  },
+  "system.mimeType": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a mime-type.",
+    "examples": [
+      "faker.system.mimeType() // 'video/vnd.vivo'"
+    ]
+  },
+  "system.commonFileType": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a commonly used file type.",
+    "examples": [
+      "faker.system.commonFileType() // 'audio'"
+    ]
+  },
+  "system.commonFileExt": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a commonly used file extension.",
+    "examples": [
+      "faker.system.commonFileExt() // 'gif'"
+    ]
+  },
+  "system.fileType": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a file type.",
+    "examples": [
+      "faker.system.fileType() // 'message'"
+    ]
+  },
+  "system.fileExt": {
+    "params": [
+      {
+        "name": "mimeType",
+        "type": "string",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a file extension.",
+    "examples": [
+      "faker.system.fileExt() // 'emf'",
+      "faker.system.fileExt('application/json') // 'json'"
+    ]
+  },
+  "system.directoryPath": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a directory path.",
+    "examples": [
+      "faker.system.directoryPath() // '/etc/mail'"
+    ]
+  },
+  "system.filePath": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a file path.",
+    "examples": [
+      "faker.system.filePath() // '/usr/local/src/money.dotx'"
+    ]
+  },
+  "system.semver": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a [semantic version](https://semver.org).",
+    "examples": [
+      "faker.system.semver() // '1.15.2'"
+    ]
+  },
+  "system.networkInterface": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ interfaceType?: (typeof commonInterfaceTypes)[number]; interfaceSchema?: keyof typeof commonInterfaceSchemas; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random [network interface](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/sec-understanding_the_predictable_network_interface_device_names).",
+    "examples": [
+      "faker.system.networkInterface() // 'enp0s3'",
+      "faker.system.networkInterface({ interfaceType: 'wl' }) // 'wlo1'",
+      "faker.system.networkInterface({ interfaceSchema: 'mac' }) // 'enx000c29c00000'",
+      "faker.system.networkInterface({ interfaceType: 'en', interfaceSchema: 'pci' }) // 'enp5s0f1d0'"
+    ]
+  },
+  "system.cron": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ includeYear?: boolean; includeNonStandard?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random cron expression.",
+    "examples": [
+      "faker.system.cron() // '45 23 * * 6'",
+      "faker.system.cron({ includeYear: true }) // '45 23 * * 6 2067'",
+      "faker.system.cron({ includeYear: false }) // '45 23 * * 6'",
+      "faker.system.cron({ includeNonStandard: false }) // '45 23 * * 6'",
+      "faker.system.cron({ includeNonStandard: true }) // '@yearly'"
+    ]
+  },
+  "vehicle.vehicle": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a random vehicle.",
+    "examples": [
+      "faker.vehicle.vehicle() // 'BMW Explorer'"
+    ]
+  },
+  "vehicle.manufacturer": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a manufacturer name.",
+    "examples": [
+      "faker.vehicle.manufacturer() // 'Ford'"
+    ]
+  },
+  "vehicle.model": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a vehicle model.",
+    "examples": [
+      "faker.vehicle.model() // 'Explorer'"
+    ]
+  },
+  "vehicle.type": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a vehicle type.",
+    "examples": [
+      "faker.vehicle.type() // 'Coupe'"
+    ]
+  },
+  "vehicle.fuel": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a fuel type.",
+    "examples": [
+      "faker.vehicle.fuel() // 'Electric'"
+    ]
+  },
+  "vehicle.vin": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a vehicle identification number (VIN).",
+    "examples": [
+      "faker.vehicle.vin() // 'YV1MH682762184654'"
+    ]
+  },
+  "vehicle.color": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a vehicle color.",
+    "examples": [
+      "faker.vehicle.color() // 'red'"
+    ]
+  },
+  "vehicle.vrm": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a vehicle registration number (Vehicle Registration Mark - VRM)",
+    "examples": [
+      "faker.vehicle.vrm() // 'MF56UPA'"
+    ]
+  },
+  "vehicle.bicycle": {
+    "params": [],
+    "returnType": "string",
+    "description": "Returns a type of bicycle.",
+    "examples": [
+      "faker.vehicle.bicycle() // 'Adventure Road Bicycle'"
+    ]
+  },
+  "word.adjective": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random adjective.",
+    "examples": [
+      "faker.word.adjective() // 'pungent'",
+      "faker.word.adjective(5) // 'slimy'",
+      "faker.word.adjective({ strategy: 'shortest' }) // 'icy'",
+      "faker.word.adjective({ length: { min: 5, max: 7 }, strategy: \"fail\" }) // 'distant'"
+    ]
+  },
+  "word.adverb": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random adverb.",
+    "examples": [
+      "faker.word.adverb() // 'quarrelsomely'",
+      "faker.word.adverb(5) // 'madly'",
+      "faker.word.adverb({ strategy: 'shortest' }) // 'too'",
+      "faker.word.adverb({ length: { min: 5, max: 7 }, strategy: \"fail\" }) // 'sweetly'"
+    ]
+  },
+  "word.conjunction": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random conjunction.",
+    "examples": [
+      "faker.word.conjunction() // 'in order that'",
+      "faker.word.conjunction(5) // 'since'",
+      "faker.word.conjunction({ strategy: 'shortest' }) // 'or'",
+      "faker.word.conjunction({ length: { min: 5, max: 7 }, strategy: \"fail\" }) // 'hence'"
+    ]
+  },
+  "word.interjection": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random interjection.",
+    "examples": [
+      "faker.word.interjection() // 'gah'",
+      "faker.word.interjection(5) // 'fooey'",
+      "faker.word.interjection({ strategy: 'shortest' }) // 'hm'",
+      "faker.word.interjection({ length: { min: 5, max: 7 }, strategy: \"fail\" }) // 'boohoo'"
+    ]
+  },
+  "word.noun": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random noun.",
+    "examples": [
+      "faker.word.noun() // 'external'",
+      "faker.word.noun(5) // 'front'",
+      "faker.word.noun({ strategy: 'shortest' }) // 'ad'",
+      "faker.word.noun({ length: { min: 5, max: 7 }, strategy: \"fail\" }) // 'average'"
+    ]
+  },
+  "word.preposition": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random preposition.",
+    "examples": [
+      "faker.word.preposition() // 'without'",
+      "faker.word.preposition(5) // 'abaft'",
+      "faker.word.preposition({ strategy: 'shortest' }) // 'a'",
+      "faker.word.preposition({ length: { min: 5, max: 7 }, strategy: \"fail\" }) // 'given'"
+    ]
+  },
+  "word.verb": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random verb.",
+    "examples": [
+      "faker.word.verb() // 'act'",
+      "faker.word.verb(5) // 'tinge'",
+      "faker.word.verb({ strategy: 'shortest' }) // 'do'",
+      "faker.word.verb({ length: { min: 5, max: 7 }, strategy: \"fail\" }) // 'vault'"
+    ]
+  },
+  "word.sample": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { length?: number | { min: number; max: number; }; strategy?: 'fail' | 'closest' | 'shortest' | 'longest' | 'any-length'; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random word, that can be an adjective, adverb, conjunction, interjection, noun, preposition, or verb.",
+    "examples": [
+      "faker.word.sample() // 'incidentally'",
+      "faker.word.sample(5) // 'fruit'"
+    ]
+  },
+  "word.words": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { count?: number | { min: number; max: number; }; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random string containing some words separated by spaces.",
+    "examples": [
+      "faker.word.words() // 'almost'",
+      "faker.word.words(5) // 'before hourly patiently dribble equal'",
+      "faker.word.words({ count: 5 }) // 'whoever edible um kissingly faraway'",
+      "faker.word.words({ count: { min: 5, max: 10 } }) // 'vice buoyant through apropos poised total wary boohoo'"
+    ]
+  },
+  "datatype.boolean": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { probability?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "boolean",
+    "description": "Returns the boolean value true or false.",
+    "examples": [
+      "faker.datatype.boolean() // false",
+      "faker.datatype.boolean(0.9) // true",
+      "faker.datatype.boolean({ probability: 0.1 }) // false"
+    ]
+  },
+  "number.int": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { min?: number; max?: number; multipleOf?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "number",
+    "description": "Returns a single random integer between zero and the given max value or the given range.",
+    "examples": [
+      "faker.number.int() // 2900970162509863",
+      "faker.number.int(100) // 52",
+      "faker.number.int({ min: 1000000 }) // 2900970162509863",
+      "faker.number.int({ max: 100 }) // 42",
+      "faker.number.int({ min: 10, max: 100 }) // 57",
+      "faker.number.int({ min: 10, max: 100, multipleOf: 10 }) // 50"
+    ]
+  },
+  "number.float": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { min?: number; max?: number; fractionDigits?: number; multipleOf?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "number",
+    "description": "Returns a single random floating-point number, by default between `0.0` and `1.0`. To change the range, pass a `min` and `max` value. To limit the number of decimal places, pass a `multipleOf` or `fractionDigits` parameter.",
+    "examples": [
+      "faker.number.float() // 0.5688541042618454",
+      "faker.number.float(3) // 2.367973240558058",
+      "faker.number.float({ max: 100 }) // 17.3687307164073",
+      "faker.number.float({ min: 20, max: 30 }) // 23.94764115102589",
+      "faker.number.float({ multipleOf: 0.25, min: 0, max:10 }) // 7.75",
+      "faker.number.float({ fractionDigits: 1 }) // 0.9",
+      "faker.number.float({ min: 10, max: 100, multipleOf: 0.02 }) // 35.42",
+      "faker.number.float({ min: 10, max: 100, fractionDigits: 3 }) // 65.716",
+      "faker.number.float({ min: 10, max: 100, multipleOf: 0.001 }) // 65.716 - same as above"
+    ]
+  },
+  "number.binary": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { min?: number; max?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a [binary](https://en.wikipedia.org/wiki/Binary_number) number.",
+    "examples": [
+      "faker.number.binary() // '1'",
+      "faker.number.binary(255) // '110101'",
+      "faker.number.binary({ min: 0, max: 65535 }) // '10110101'"
+    ]
+  },
+  "number.octal": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { min?: number; max?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns an [octal](https://en.wikipedia.org/wiki/Octal) number.",
+    "examples": [
+      "faker.number.octal() // '5'",
+      "faker.number.octal(255) // '377'",
+      "faker.number.octal({ min: 0, max: 65535 }) // '4766'"
+    ]
+  },
+  "number.hex": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { min?: number; max?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a lowercase [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) number.",
+    "examples": [
+      "faker.number.hex() // 'b'",
+      "faker.number.hex(255) // '9d'",
+      "faker.number.hex({ min: 0, max: 65535 }) // 'af17'"
+    ]
+  },
+  "number.bigInt": {
+    "params": [
+      {
+        "name": "options",
+        "type": "bigint | number | string | boolean | { min?: bigint | number | string | boolean; max?: bigint | number | string | boolean; multipleOf?: bigint | number | string | boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "bigint",
+    "description": "Returns a [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#bigint_type) number.",
+    "examples": [
+      "faker.number.bigInt() // 55422n",
+      "faker.number.bigInt(100n) // 52n",
+      "faker.number.bigInt({ min: 1000000n }) // 431433n",
+      "faker.number.bigInt({ max: 100n }) // 42n",
+      "faker.number.bigInt({ multipleOf: 7n }) // 35n",
+      "faker.number.bigInt({ min: 10n, max: 100n }) // 36n"
+    ]
+  },
+  "number.romanNumeral": {
+    "params": [
+      {
+        "name": "options",
+        "type": "number | { min?: number; max?: number; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a roman numeral in String format.",
+    "examples": [
+      "faker.number.romanNumeral() // \"CMXCIII\"",
+      "faker.number.romanNumeral(5) // \"III\"",
+      "faker.number.romanNumeral({ min: 10 }) // \"XCIX\"",
+      "faker.number.romanNumeral({ max: 20 }) // \"XVII\"",
+      "faker.number.romanNumeral({ min: 5, max: 10 }) // \"VII\""
+    ]
+  },
+  "airline.airport": {
+    "params": [],
+    "returnType": "Airport",
+    "description": "Generates a random airport.",
+    "examples": [
+      "faker.airline.airport() // { name: 'Dallas Fort Worth International Airport', iataCode: 'DFW' }"
+    ]
+  },
+  "airline.airline": {
+    "params": [],
+    "returnType": "Airline",
+    "description": "Generates a random airline.",
+    "examples": [
+      "faker.airline.airline() // { name: 'American Airlines', iataCode: 'AA' }"
+    ]
+  },
+  "airline.airplane": {
+    "params": [],
+    "returnType": "Airplane",
+    "description": "Generates a random airplane.",
+    "examples": [
+      "faker.airline.airplane() // { name: 'Airbus A321neo', iataTypeCode: '32Q' }"
+    ]
+  },
+  "airline.recordLocator": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ allowNumerics?: boolean; allowVisuallySimilarCharacters?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random [record locator](https://en.wikipedia.org/wiki/Record_locator). Record locators",
+    "examples": [
+      "faker.airline.recordLocator() // 'KIFRWE'",
+      "faker.airline.recordLocator({ allowNumerics: true }) // 'E5TYEM'",
+      "faker.airline.recordLocator({ allowVisuallySimilarCharacters: true }) // 'ANZNEI'",
+      "faker.airline.recordLocator({ allowNumerics: true, allowVisuallySimilarCharacters: true }) // '1Z2Z3E'"
+    ]
+  },
+  "airline.seat": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ aircraftType?: AircraftType; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Generates a random seat.",
+    "examples": [
+      "faker.airline.seat() // '22C'",
+      "faker.airline.seat({ aircraftType: 'regional' }) // '7A'",
+      "faker.airline.seat({ aircraftType: 'widebody' }) // '42K'"
+    ]
+  },
+  "airline.aircraftType": {
+    "params": [],
+    "returnType": "AircraftType",
+    "description": "Returns a random aircraft type.",
+    "examples": [
+      "faker.airline.aircraftType() // 'narrowbody'"
+    ]
+  },
+  "airline.flightNumber": {
+    "params": [
+      {
+        "name": "options",
+        "type": "{ length?: number | { min: number; max: number; }; addLeadingZeros?: boolean; }",
+        "optional": true
+      }
+    ],
+    "returnType": "string",
+    "description": "Returns a random flight number. Flight numbers are always 1 to 4 digits long. Sometimes they are",
+    "examples": [
+      "faker.airline.flightNumber() // '2405'",
+      "faker.airline.flightNumber({ addLeadingZeros: true }) // '0249'",
+      "faker.airline.flightNumber({ addLeadingZeros: true, length: 2 }) // '0042'",
+      "faker.airline.flightNumber({ addLeadingZeros: true, length: { min: 2, max: 3 } }) // '0624'",
+      "faker.airline.flightNumber({ length: 3 }) // '425'",
+      "faker.airline.flightNumber({ length: { min: 2, max: 3 } }) // '84'"
+    ]
+  }
+}
