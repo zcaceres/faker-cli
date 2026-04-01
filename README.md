@@ -21,7 +21,7 @@ Standalone binaries for macOS, Linux, and Windows are available on the [releases
 ```bash
 git clone https://github.com/zcaceres/faker-cli.git
 cd faker-cli && bun install
-bun run src/cli.ts person.firstName
+bun run cli person.firstName
 ```
 
 ## Usage

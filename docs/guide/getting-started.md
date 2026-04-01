@@ -32,7 +32,7 @@ git clone https://github.com/zcaceres/faker-cli.git
 cd faker-cli && bun install
 ```
 
-When running from source, use `bun run src/cli.ts` instead of `faker` in the examples below.
+When running from source, use `bun run cli` instead of `faker` in the examples below.
 
 Verify the installation:
 
