@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.1] - 2026-04-01
+
+### Added
+- `faker --describe` (no args) shows full tool self-description for agents
+- `--format csv` output with RFC 4180 compliance (header rows, proper escaping)
+
+### Fixed
+- `--schema` with leading whitespace no longer treated as a file path
+- Schema errors now show which method failed and suggest `--describe`
+- Extra positional args now warn instead of being silently ignored
+- `--count` capped at 100,000 to prevent unbounded memory/time
+- CSV: nested objects serialized as JSON in cells instead of `[object Object]`
+- CSV: header keys with commas/quotes properly escaped
+
 ## [0.2.0] - 2026-03-28
 
 ### Added
