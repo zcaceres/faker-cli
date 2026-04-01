@@ -79,7 +79,13 @@ function resolveValue(
   if (typeof value === "string") {
     const ref = parseFakerRef(value, modules, methodCache);
     if (ref) {
-      return invoke(fakerInstance, ref.path, ref.rawArg);
+      try {
+        return invoke(fakerInstance, ref.path, ref.rawArg);
+      } catch (err: any) {
+        throw new Error(
+          `${ref.path} failed: ${err.message}. Run: faker --describe ${ref.path}`
+        );
+      }
     }
     return value; // literal string
   }

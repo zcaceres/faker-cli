@@ -43,6 +43,10 @@ for (let i = 0; i < args.length; i++) {
       console.error("Error: --count must be a positive integer");
       process.exit(1);
     }
+    if (count > 100000) {
+      console.error("Error: --count maximum is 100000");
+      process.exit(1);
+    }
     continue;
   }
 
@@ -159,6 +163,11 @@ Options:
     rawArg = arg;
     continue;
   }
+
+  // Extra positional args
+  console.error(
+    `Warning: extra argument "${arg}" ignored. faker takes at most two positional args: module.method [arg]`
+  );
 }
 
 // Resolve faker instance
@@ -251,8 +260,9 @@ if (schema) {
   try {
     let schemaObj: unknown;
 
-    if (schema.startsWith("{") || schema.startsWith("[")) {
-      schemaObj = JSON.parse(schema);
+    const schemaTrimmed = schema.trim();
+    if (schemaTrimmed.startsWith("{") || schemaTrimmed.startsWith("[")) {
+      schemaObj = JSON.parse(schemaTrimmed);
     } else {
       const text = await Bun.file(schema).text();
       schemaObj = JSON.parse(text);
