@@ -169,10 +169,56 @@ export function formatModuleDescription(
   return lines.join("\n");
 }
 
+/** Tool-level self-description for agents. */
+function describeSelf(fakerInstance: any): string {
+  const pkg = require("../package.json");
+  const modules = listModules(fakerInstance);
+  const methodCount = Object.keys(index).length;
+
+  const lines: string[] = [];
+  lines.push(`faker v${pkg.version} — Agent-friendly CLI for generating fake data`);
+  lines.push("");
+  lines.push("Wraps @faker-js/faker with JSON output, schema templates, and 60+ locales.");
+  lines.push(`${modules.length} modules, ${methodCount} methods available.`);
+  lines.push("");
+  lines.push("Capabilities:");
+  lines.push("  Generate single values    faker person.fullName");
+  lines.push("  Generate with args        faker number.int '{\"min\":1,\"max\":100}'");
+  lines.push("  Structured objects        faker --schema '{\"name\":\"person.fullName\",\"email\":\"internet.email\"}'");
+  lines.push("  Batch generation          faker person.fullName --count 10");
+  lines.push("  Streaming output          faker person.fullName --count 100 --format ndjson");
+  lines.push("  Deterministic output      faker person.fullName --seed 42");
+  lines.push("  Locale support            faker person.firstName --locale de");
+  lines.push("  Template strings          faker helpers.fake \"{{person.firstName}} {{person.lastName}}\"");
+  lines.push("  Schema from file          faker --schema schema.json --count 10");
+  lines.push("");
+  lines.push("Discovery:");
+  lines.push("  faker --list              All modules");
+  lines.push("  faker --list person       Methods in a module");
+  lines.push("  faker --describe person   Module overview with all method signatures");
+  lines.push("  faker --describe number.int  Method details: params, types, examples");
+  lines.push("");
+  lines.push("Output: Always valid JSON to stdout. Errors to stderr.");
+  lines.push("");
+
+  const moduleRows = modules.map(
+    (m) => `  ${m.padEnd(14)}${getModuleDescription(m)}`
+  );
+  lines.push("Modules:");
+  lines.push(...moduleRows);
+
+  return lines.join("\n");
+}
+
 /**
  * Handle --describe flag. Returns formatted string or throws with guided error.
  */
 export function describe(fakerInstance: any, target: string): string {
+  // Self-description
+  if (target === "__self__") {
+    return describeSelf(fakerInstance);
+  }
+
   // Module-level: no dot
   if (!target.includes(".")) {
     const modules = listModules(fakerInstance);

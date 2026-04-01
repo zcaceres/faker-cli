@@ -5,7 +5,7 @@
 
 import { faker as defaultFaker, allFakers } from "@faker-js/faker";
 import { invoke } from "./resolver";
-import { serialize } from "./serialize";
+import { serialize, serializeCSV } from "./serialize";
 import { listModules, listMethods } from "./enumerate";
 import { resolveSchema } from "./schema";
 import { formatColumns, formatTable } from "./format";
@@ -19,7 +19,7 @@ let seed: number | undefined;
 let locale: string | undefined;
 let refDate: string | undefined;
 let schema: string | undefined;
-let format: "json" | "ndjson" = "json";
+let format: "json" | "ndjson" | "csv" = "json";
 let describeTarget: string | undefined;
 let listFlag = false;
 let listTarget: string | undefined;
@@ -88,9 +88,9 @@ for (let i = 0; i < args.length; i++) {
       process.exit(1);
     }
     const val = args[++i];
-    if (val !== "json" && val !== "ndjson") {
+    if (val !== "json" && val !== "ndjson" && val !== "csv") {
       console.error(
-        `Error: Unknown format "${val}". Available: json, ndjson`
+        `Error: Unknown format "${val}". Available: json, ndjson, csv`
       );
       process.exit(1);
     }
@@ -99,11 +99,11 @@ for (let i = 0; i < args.length; i++) {
   }
 
   if (arg === "--describe" || arg === "--info") {
-    if (i + 1 >= args.length) {
-      console.error("Error: --describe requires a module or module.method");
-      process.exit(1);
+    if (i + 1 >= args.length || args[i + 1].startsWith("-")) {
+      describeTarget = "__self__";
+    } else {
+      describeTarget = args[++i];
     }
-    describeTarget = args[++i];
     continue;
   }
 
@@ -142,7 +142,7 @@ Options:
   --locale L, -L L    Locale code (e.g. de, en_US, ja). Default: en
   --ref-date DATE     Reference date for date methods (ISO 8601). Default: now
   --schema JSON|FILE  Generate structured object from schema
-  --format FMT, -f    Output format: json (default), ndjson
+  --format FMT, -f    Output format: json (default), ndjson, csv
   --version, -v       Show version
   --help, -h          Show this help`);
     process.exit(0);
@@ -258,13 +258,19 @@ if (schema) {
       schemaObj = JSON.parse(text);
     }
 
-    if (count === 1) {
+    if (count === 1 && format !== "csv") {
       const result = resolveSchema(f, schemaObj);
       console.log(serialize(result));
     } else if (format === "ndjson") {
       for (let i = 0; i < count; i++) {
         console.log(serialize(resolveSchema(f, schemaObj)));
       }
+    } else if (format === "csv") {
+      const results: unknown[] = [];
+      for (let i = 0; i < Math.max(count, 1); i++) {
+        results.push(resolveSchema(f, schemaObj));
+      }
+      console.log(serializeCSV(results));
     } else {
       const results: unknown[] = [];
       for (let i = 0; i < count; i++) {
@@ -286,13 +292,19 @@ if (!path) {
 }
 
 try {
-  if (count === 1) {
+  if (count === 1 && format !== "csv") {
     const result = invoke(f, path, rawArg);
     console.log(serialize(result));
   } else if (format === "ndjson") {
     for (let i = 0; i < count; i++) {
       console.log(serialize(invoke(f, path, rawArg)));
     }
+  } else if (format === "csv") {
+    const results: unknown[] = [];
+    for (let i = 0; i < Math.max(count, 1); i++) {
+      results.push(invoke(f, path, rawArg));
+    }
+    console.log(serializeCSV(results));
   } else {
     const results: unknown[] = [];
     for (let i = 0; i < count; i++) {
