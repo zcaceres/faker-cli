@@ -117,6 +117,14 @@ export default {
 
 <style scoped>
 .releases-page {
+  --rp-text: var(--faker-text, #F5F5F4);
+  --rp-text-muted: var(--faker-text-muted, #D6D3D1);
+  --rp-text-dim: var(--faker-text-dim, #A8A29E);
+  --rp-text-faint: var(--faker-text-faint, #57534E);
+  --rp-surface: var(--faker-surface, #1C1917);
+  --rp-border: var(--faker-border, #292524);
+  --rp-accent: var(--faker-amber, #F59E0B);
+
   max-width: 900px;
   margin: 0 auto;
   padding: 0 24px;
@@ -125,14 +133,14 @@ export default {
 .loading, .error, .empty {
   text-align: center;
   padding: 64px 0;
-  color: #A8A29E;
+  color: var(--rp-text-dim);
 }
 
 .spinner {
   width: 32px;
   height: 32px;
-  border: 3px solid #292524;
-  border-top-color: #F59E0B;
+  border: 3px solid var(--rp-border);
+  border-top-color: var(--rp-accent);
   border-radius: 50%;
   margin: 0 auto 16px;
   animation: spin 0.8s linear infinite;
@@ -149,8 +157,8 @@ export default {
 }
 
 .release-card {
-  background: #1C1917;
-  border: 1px solid #292524;
+  background: var(--rp-surface);
+  border: 1px solid var(--rp-border);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -160,7 +168,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 20px 28px;
-  border-bottom: 1px solid #292524;
+  border-bottom: 1px solid var(--rp-border);
 }
 
 .release-title {
@@ -173,7 +181,7 @@ export default {
   font-family: 'Syne', sans-serif;
   font-size: 22px;
   font-weight: 700;
-  color: #F5F5F4;
+  color: var(--rp-text);
   letter-spacing: -0.02em;
 }
 
@@ -181,7 +189,7 @@ export default {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
   font-weight: 600;
-  color: #F59E0B;
+  color: var(--rp-accent);
   padding: 3px 8px;
   background: rgba(245, 158, 11, 0.1);
   border: 1px solid rgba(245, 158, 11, 0.25);
@@ -194,7 +202,7 @@ export default {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
   font-weight: 600;
-  color: #A8A29E;
+  color: var(--rp-text-dim);
   padding: 3px 8px;
   background: rgba(120, 113, 108, 0.1);
   border: 1px solid rgba(120, 113, 108, 0.25);
@@ -206,19 +214,19 @@ export default {
 .release-date {
   font-family: 'Outfit', sans-serif;
   font-size: 13px;
-  color: #57534E;
+  color: var(--rp-text-faint);
 }
 
 .release-body {
   padding: 20px 28px;
-  border-bottom: 1px solid #292524;
+  border-bottom: 1px solid var(--rp-border);
 }
 
 .release-body :deep(h4) {
   font-family: 'Outfit', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #A8A29E;
+  color: var(--rp-text-muted);
   margin: 12px 0 8px;
 }
 
@@ -229,7 +237,7 @@ export default {
 .release-body :deep(p) {
   font-family: 'Outfit', sans-serif;
   font-size: 13px;
-  color: #A8A29E;
+  color: var(--rp-text-dim);
   line-height: 20px;
   margin: 2px 0;
 }
@@ -250,7 +258,7 @@ export default {
   font-family: 'Outfit', sans-serif;
   font-size: 12px;
   font-weight: 500;
-  color: #57534E;
+  color: var(--rp-text-faint);
 }
 
 .asset-badge {
@@ -258,27 +266,27 @@ export default {
   align-items: center;
   gap: 8px;
   padding: 6px 12px;
-  background: #292524;
+  background: var(--rp-border);
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.15s;
 }
 
 .asset-badge:hover {
-  background: #44403C;
+  background: var(--rp-text-faint);
 }
 
 .asset-name {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 11px;
   font-weight: 500;
-  color: #A8A29E;
+  color: var(--rp-text-dim);
 }
 
 .asset-size {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
-  color: #57534E;
+  color: var(--rp-text-faint);
 }
 
 @media (max-width: 640px) {
