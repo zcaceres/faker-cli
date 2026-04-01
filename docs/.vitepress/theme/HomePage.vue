@@ -148,7 +148,7 @@ import { withBase } from 'vitepress'
   font-size: 22px;
   font-weight: 400;
   font-style: italic;
-  color: #78716C;
+  color: #A8A29E;
   text-align: center;
   max-width: 520px;
   line-height: 32px;
@@ -351,7 +351,7 @@ import { withBase } from 'vitepress'
   font-family: 'Outfit', sans-serif;
   font-size: 14px;
   line-height: 22px;
-  color: #78716C;
+  color: #A8A29E;
   margin: 0;
 }
 
@@ -420,7 +420,7 @@ import { withBase } from 'vitepress'
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12px;
   font-weight: 500;
-  color: #78716C;
+  color: #A8A29E;
   padding: 4px 10px;
   border: 1px solid #292524;
   border-radius: 4px;

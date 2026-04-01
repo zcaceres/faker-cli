@@ -125,7 +125,7 @@ export default {
 .loading, .error, .empty {
   text-align: center;
   padding: 64px 0;
-  color: #78716C;
+  color: #A8A29E;
 }
 
 .spinner {
@@ -194,7 +194,7 @@ export default {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 10px;
   font-weight: 600;
-  color: #78716C;
+  color: #A8A29E;
   padding: 3px 8px;
   background: rgba(120, 113, 108, 0.1);
   border: 1px solid rgba(120, 113, 108, 0.25);
@@ -229,7 +229,7 @@ export default {
 .release-body :deep(p) {
   font-family: 'Outfit', sans-serif;
   font-size: 13px;
-  color: #78716C;
+  color: #A8A29E;
   line-height: 20px;
   margin: 2px 0;
 }
