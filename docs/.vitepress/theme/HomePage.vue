@@ -100,8 +100,34 @@ import { withBase } from 'vitepress'
 
 <style scoped>
 .home-page {
+  --hp-bg: #0C0A09;
+  --hp-text: #F5F5F4;
+  --hp-text-muted: #A8A29E;
+  --hp-text-dim: #57534E;
+  --hp-text-ghost: #44403C;
+  --hp-surface: #1C1917;
+  --hp-border: #292524;
+  --hp-accent: #F59E0B;
+  --hp-accent-hover: #FBBF24;
+  --hp-lime: #A3E635;
+  --hp-headline-dim: #57534E;
+
   max-width: 1440px;
   margin: 0 auto;
+}
+
+:root:not(.dark) .home-page {
+  --hp-bg: #FAFAF9;
+  --hp-text: #1C1917;
+  --hp-text-muted: #57534E;
+  --hp-text-dim: #78716C;
+  --hp-text-ghost: #A8A29E;
+  --hp-surface: #F5F5F4;
+  --hp-border: #E7E5E4;
+  --hp-accent: #D97706;
+  --hp-accent-hover: #B45309;
+  --hp-lime: #4D7C0F;
+  --hp-headline-dim: #A8A29E;
 }
 
 /* ── Hero ── */
@@ -124,7 +150,7 @@ import { withBase } from 'vitepress'
   font-family: 'IBM Plex Mono', monospace;
   font-size: 11px;
   font-weight: 500;
-  color: #F59E0B;
+  color: var(--hp-accent);
   letter-spacing: 0.15em;
   text-transform: uppercase;
 }
@@ -133,7 +159,7 @@ import { withBase } from 'vitepress'
   font-family: 'Syne', sans-serif;
   font-size: 80px;
   font-weight: 800;
-  color: #F5F5F4;
+  color: var(--hp-text);
   letter-spacing: -0.04em;
   line-height: 80px;
   text-align: center;
@@ -148,7 +174,7 @@ import { withBase } from 'vitepress'
   font-size: 22px;
   font-weight: 400;
   font-style: italic;
-  color: #A8A29E;
+  color: var(--hp-text-muted);
   text-align: center;
   max-width: 520px;
   line-height: 32px;
@@ -175,30 +201,30 @@ import { withBase } from 'vitepress'
 }
 
 .btn-primary {
-  background-color: #F59E0B;
-  color: #0C0A09;
+  background-color: var(--hp-accent);
+  color: var(--hp-bg);
   font-weight: 600;
 }
 
 .btn-primary:hover {
-  background-color: #FBBF24;
+  background-color: var(--hp-accent-hover);
 }
 
 .btn-secondary {
-  border: 1px solid #292524;
-  color: #A8A29E;
+  border: 1px solid var(--hp-border);
+  color: var(--hp-text-muted);
   font-weight: 500;
 }
 
 .btn-secondary:hover {
-  border-color: #44403C;
-  color: #F5F5F4;
+  border-color: var(--hp-text-ghost);
+  color: var(--hp-text);
 }
 
 /* ── Terminal ── */
 .terminal {
-  background: #1C1917;
-  border: 1px solid #292524;
+  background: var(--hp-surface);
+  border: 1px solid var(--hp-border);
   border-radius: 12px;
   width: 100%;
   max-width: 720px;
@@ -210,20 +236,20 @@ import { withBase } from 'vitepress'
   align-items: center;
   gap: 8px;
   padding: 14px 20px;
-  border-bottom: 1px solid #292524;
+  border-bottom: 1px solid var(--hp-border);
 }
 
 .terminal-dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #292524;
+  background: var(--hp-border);
 }
 
 .terminal-title {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 11px;
-  color: #57534E;
+  color: var(--hp-text-dim);
   margin-left: 8px;
 }
 
@@ -244,26 +270,26 @@ import { withBase } from 'vitepress'
   font-family: 'IBM Plex Mono', monospace;
   font-size: 13px;
   font-weight: 500;
-  color: #A8A29E;
+  color: var(--hp-text-muted);
   line-height: 22px;
 }
 
 .terminal-out {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 13px;
-  color: #A3E635;
+  color: var(--hp-lime);
   line-height: 22px;
 }
 
 .terminal-schema {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 13px;
-  color: #57534E;
+  color: var(--hp-text-dim);
   line-height: 22px;
 }
 
 .terminal-out-inline {
-  color: #A3E635;
+  color: var(--hp-lime);
 }
 
 .terminal-prompt {
@@ -274,7 +300,7 @@ import { withBase } from 'vitepress'
 .terminal-cursor {
   width: 8px;
   height: 18px;
-  background: #F59E0B;
+  background: var(--hp-accent);
   border-radius: 1px;
   animation: blink 1.2s infinite;
 }
@@ -300,7 +326,7 @@ import { withBase } from 'vitepress'
   font-family: 'Syne', sans-serif;
   font-size: 36px;
   font-weight: 700;
-  color: #F5F5F4;
+  color: var(--hp-text);
   letter-spacing: -0.03em;
   line-height: 42px;
   margin: 0;
@@ -309,7 +335,7 @@ import { withBase } from 'vitepress'
 }
 
 .features-headline .dim {
-  color: #57534E;
+  color: var(--hp-headline-dim);
 }
 
 .feature-grid {
@@ -319,8 +345,8 @@ import { withBase } from 'vitepress'
 }
 
 .feature-card {
-  background: #1C1917;
-  border: 1px solid #292524;
+  background: var(--hp-surface);
+  border: 1px solid var(--hp-border);
   border-radius: 12px;
   padding: 32px;
   display: flex;
@@ -331,7 +357,7 @@ import { withBase } from 'vitepress'
 .feature-icon {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 24px;
-  color: #F59E0B;
+  color: var(--hp-accent);
   line-height: 28px;
 }
 
@@ -339,7 +365,7 @@ import { withBase } from 'vitepress'
   font-family: 'Syne', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #F5F5F4;
+  color: var(--hp-text);
   letter-spacing: -0.01em;
   margin: 0;
   border: none;
@@ -351,7 +377,7 @@ import { withBase } from 'vitepress'
   font-family: 'Outfit', sans-serif;
   font-size: 14px;
   line-height: 22px;
-  color: #A8A29E;
+  color: var(--hp-text-muted);
   margin: 0;
 }
 
@@ -368,7 +394,7 @@ import { withBase } from 'vitepress'
   font-family: 'Syne', sans-serif;
   font-size: 36px;
   font-weight: 700;
-  color: #F5F5F4;
+  color: var(--hp-text);
   letter-spacing: -0.03em;
   text-align: center;
   margin: 0;
@@ -381,22 +407,22 @@ import { withBase } from 'vitepress'
   align-items: center;
   gap: 16px;
   padding: 20px 32px;
-  background: #1C1917;
-  border: 1px solid #292524;
+  background: var(--hp-surface);
+  border: 1px solid var(--hp-border);
   border-radius: 10px;
 }
 
 .install-dollar {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
-  color: #A8A29E;
+  color: var(--hp-text-muted);
 }
 
 .install-text {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 14px;
   font-weight: 500;
-  color: #F5F5F4;
+  color: var(--hp-text);
 }
 
 .install-alt {
@@ -408,7 +434,7 @@ import { withBase } from 'vitepress'
 .install-alt-text {
   font-family: 'Outfit', sans-serif;
   font-size: 13px;
-  color: #57534E;
+  color: var(--hp-text-dim);
 }
 
 .install-platforms {
@@ -420,9 +446,9 @@ import { withBase } from 'vitepress'
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12px;
   font-weight: 500;
-  color: #A8A29E;
+  color: var(--hp-text-muted);
   padding: 4px 10px;
-  border: 1px solid #292524;
+  border: 1px solid var(--hp-border);
   border-radius: 4px;
 }
 

@@ -1,5 +1,46 @@
-/* ── faker-cli Warm Dark Palette ── */
+/* ── faker-cli Palette ── */
 :root {
+  --faker-amber: #D97706;
+  --faker-amber-light: #B45309;
+  --faker-amber-dark: #92400E;
+  --faker-lime: #4D7C0F;
+  --faker-black: #FAFAF9;
+  --faker-surface: #F5F5F4;
+  --faker-border: #E7E5E4;
+  --faker-text: #1C1917;
+  --faker-text-muted: #57534E;
+  --faker-text-dim: #78716C;
+  --faker-text-faint: #A8A29E;
+  --faker-text-ghost: #D6D3D1;
+
+  /* VitePress brand overrides */
+  --vp-c-brand-1: #D97706;
+  --vp-c-brand-2: #B45309;
+  --vp-c-brand-3: #92400E;
+  --vp-c-brand-soft: rgba(217, 119, 6, 0.14);
+
+  --vp-c-text-1: #1C1917;
+  --vp-c-text-2: #57534E;
+
+  --vp-button-brand-bg: #D97706;
+  --vp-button-brand-hover-bg: #B45309;
+  --vp-button-brand-active-bg: #92400E;
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: #FFFFFF;
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-active-border: transparent;
+
+  --vp-badge-tip-border: transparent;
+  --vp-badge-tip-text: #92400E;
+  --vp-badge-tip-bg: rgba(217, 119, 6, 0.12);
+
+  --vp-custom-block-tip-border: #D97706;
+  --vp-custom-block-tip-bg: rgba(217, 119, 6, 0.06);
+  --vp-custom-block-tip-text: #92400E;
+}
+
+/* ── Dark Mode ── */
+.dark {
   --faker-amber: #F59E0B;
   --faker-amber-light: #FBBF24;
   --faker-amber-dark: #D97706;
@@ -13,61 +54,33 @@
   --faker-text-faint: #57534E;
   --faker-text-ghost: #44403C;
 
-  /* VitePress brand overrides */
-  --vp-c-brand-1: var(--faker-amber);
-  --vp-c-brand-2: var(--faker-amber-light);
-  --vp-c-brand-3: var(--faker-amber-dark);
-  --vp-c-brand-soft: rgba(245, 158, 11, 0.14);
-
-  --vp-c-text-1: #F5F5F4;
-  --vp-c-text-2: #A8A29E;
-
-  --vp-button-brand-bg: var(--faker-amber);
-  --vp-button-brand-hover-bg: var(--faker-amber-light);
-  --vp-button-brand-active-bg: var(--faker-amber-dark);
-  --vp-button-brand-border: transparent;
-  --vp-button-brand-text: var(--faker-black);
-  --vp-button-brand-hover-border: transparent;
-  --vp-button-brand-active-border: transparent;
-
-  --vp-badge-tip-border: transparent;
-  --vp-badge-tip-text: var(--faker-amber-dark);
-  --vp-badge-tip-bg: rgba(245, 158, 11, 0.12);
-
-  --vp-custom-block-tip-border: var(--faker-amber);
-  --vp-custom-block-tip-bg: rgba(245, 158, 11, 0.06);
-  --vp-custom-block-tip-text: var(--faker-amber-dark);
-}
-
-/* ── Dark Mode ── */
-.dark {
-  --vp-c-brand-1: var(--faker-amber);
-  --vp-c-brand-2: var(--faker-amber-light);
-  --vp-c-brand-3: var(--faker-amber-dark);
+  --vp-c-brand-1: #F59E0B;
+  --vp-c-brand-2: #FBBF24;
+  --vp-c-brand-3: #D97706;
   --vp-c-brand-soft: rgba(245, 158, 11, 0.16);
 
-  --vp-c-bg: var(--faker-black);
-  --vp-c-bg-alt: var(--faker-surface);
-  --vp-c-bg-elv: var(--faker-border);
-  --vp-c-bg-soft: var(--faker-surface);
+  --vp-c-bg: #0C0A09;
+  --vp-c-bg-alt: #1C1917;
+  --vp-c-bg-elv: #292524;
+  --vp-c-bg-soft: #1C1917;
 
   --vp-c-text-1: #F5F5F4;
   --vp-c-text-2: #A8A29E;
 
-  --vp-sidebar-bg-color: var(--faker-surface);
+  --vp-sidebar-bg-color: #1C1917;
   --vp-c-divider: #ffffff1a;
 
-  --vp-button-brand-bg: var(--faker-amber);
-  --vp-button-brand-hover-bg: var(--faker-amber-light);
-  --vp-button-brand-active-bg: var(--faker-amber-dark);
-  --vp-button-brand-text: var(--faker-black);
+  --vp-button-brand-bg: #F59E0B;
+  --vp-button-brand-hover-bg: #FBBF24;
+  --vp-button-brand-active-bg: #D97706;
+  --vp-button-brand-text: #0C0A09;
 
-  --vp-badge-tip-text: var(--faker-amber-light);
+  --vp-badge-tip-text: #FBBF24;
   --vp-badge-tip-bg: rgba(245, 158, 11, 0.16);
 
   --vp-custom-block-tip-border: rgba(245, 158, 11, 0.4);
   --vp-custom-block-tip-bg: rgba(245, 158, 11, 0.08);
-  --vp-custom-block-tip-text: var(--faker-amber-light);
+  --vp-custom-block-tip-text: #FBBF24;
 }
 
 /* ── Typography ── */
@@ -81,8 +94,8 @@
   --vp-code-color: var(--faker-amber-dark);
   --vp-code-bg: rgba(245, 158, 11, 0.06);
 
-  --vp-code-block-bg: var(--faker-surface);
-  --vp-code-block-color: #e0e0e0;
+  --vp-code-block-bg: #F5F5F4;
+  --vp-code-block-color: #1C1917;
   --vp-code-block-divider-color: #ffffff10;
 
   --vp-code-line-highlight-color: rgba(245, 158, 11, 0.08);
