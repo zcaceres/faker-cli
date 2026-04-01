@@ -2,6 +2,8 @@
 
 Agent-friendly CLI for generating fake data. Wraps [@faker-js/faker](https://fakerjs.dev/) with JSON output, schema templates, 60+ locales, and built-in discoverability.
 
+**[Documentation](https://faker-cli.zach.dev)** | **[Releases](https://faker-cli.zach.dev/releases)**
+
 ## Install
 
 ### Homebrew (macOS / Linux)

@@ -14,13 +14,18 @@
     "build:linux-arm64": "bun build --compile --target=bun-linux-arm64 src/cli.ts --outfile dist/faker-linux-arm64",
     "build:windows-x64": "bun build --compile --target=bun-windows-x64 src/cli.ts --outfile dist/faker-windows-x64.exe",
     "generate-fixtures": "bun run test/fixtures/generate.ts",
-    "generate-metadata": "bun run test/fixtures/generate-metadata.ts"
+    "generate-metadata": "bun run test/fixtures/generate-metadata.ts",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
     "@faker-js/faker": "^10.4.0"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.31"
   },
   "peerDependencies": {
     "typescript": "^6.0.2"
