@@ -10,8 +10,8 @@ import { withBase } from 'vitepress'
         <span class="overline">Agent-Friendly CLI for Fake Data</span>
         <h1 class="headline">Generate<br/>Anything Fake</h1>
         <p class="subtitle">
-          259 methods across 27 modules. Names, emails, addresses,
-          dates, numbers, images — all from your terminal.
+          Generate names, emails, addresses, dates, numbers,
+          images, and more — all from your terminal.
         </p>
       </div>
       <div class="cta-buttons">
@@ -81,7 +81,7 @@ import { withBase } from 'vitepress'
     <!-- Install -->
     <section class="install">
       <span class="overline">Get Started in Seconds</span>
-      <h2 class="install-headline">One line. Any platform.</h2>
+      <h2 class="install-headline">Install with Homebrew</h2>
       <div class="install-cmd">
         <span class="install-dollar">$</span>
         <span class="install-text">brew install zcaceres/tap/faker-cli</span>
