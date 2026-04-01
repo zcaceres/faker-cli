@@ -59,7 +59,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/zcaceres/faker-cli' },
     ],
     footer: {
-      message: 'MIT Licensed. Wraps @faker-js/faker.',
+      message: 'MIT Licensed. Wraps <a href="https://fakerjs.dev/" target="_blank">@faker-js/faker</a>.',
       copyright: 'Built by <a href="https://zach.dev" target="_blank">zach.dev</a>',
     },
   },
